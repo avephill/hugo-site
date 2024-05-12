@@ -1,0 +1,19 @@
+// Change icons in about
+.big-icon {
+  font-size: 1rem;
+  color: grey;
+}
+
+.home-section {
+  height: calc(100vh - 70px);
+}
+
+// For image at bottom
+.img-div-bg {
+  // height: 10vh;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  position: absolute;
+  z-index:-999;
+}
