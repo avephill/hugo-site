@@ -4,7 +4,12 @@
   color: grey;
 }
 
-.home-section {
+// This changes section height for each section
+// .home-section {
+//   height: calc(100vh - 70px);
+// }
+
+.wg-about-biography {
   height: calc(100vh - 70px);
 }
 
