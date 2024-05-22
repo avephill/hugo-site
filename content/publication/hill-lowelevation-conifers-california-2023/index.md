@@ -19,6 +19,7 @@ image:
   focal_point: ""
   preview_only: false
 url_video: https://www.youtube.com/watch?v=aGoe9lULUvo
+url_code: https://github.com/avephill/sierra-nevada-VCM
 abstract: "Since the 1930s, California's Sierra Nevada has warmed
   by an average of 1.2$∘$C. Warming directly primes forests for easier wildfire ignition,
   but the change in climate also affects vegetation species composition. Different

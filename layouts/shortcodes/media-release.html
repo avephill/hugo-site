@@ -1,0 +1,62 @@
+<style>
+    .news-articles-list {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        padding-right:100px;
+    }
+    .news-article {
+        display: flex;
+        align-items: center;
+        border: 1px solid #ddd;
+        padding: 10px;
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+    .news-icon {
+        margin-right: 20px;
+        width: 100px; /* fixed width */
+        height: 60px; /* fixed height */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+    }
+    .news-icon img {
+        width: 100%;
+        height: auto;
+    }
+    .news-details {
+        display: flex;
+        flex-direction: column;
+        width: calc(100% - 120px); /* adjust width to fit within the article layout */
+    }
+    .news-title {
+        font-size: 1.2em;
+        font-weight: bold;
+        margin-bottom: 5px;
+    }
+    .news-title a {
+        text-decoration: none;
+        color: inherit;
+    }
+    .news-title a:hover {
+        text-decoration: underline;
+    }
+    .news-meta, .news-publisher {
+        font-size: 0.9em;
+        color: #666;
+    }
+</style>
+
+<div class="news-article">
+    <div class="news-icon">
+        <img src="{{ .Get "icon" }}" alt="News Organization Logo">
+    </div>
+    <div class="news-details">
+        <div class="news-title">
+            <a href="{{ .Get "url" }}" target="_blank">{{ .Get "title" }}</a>
+        </div>
+        <div class="news-meta">{{ .Get "date" }} <i>{{ .Get "publisher" }}</i></div>
+    </div>
+</div>

@@ -196,7 +196,89 @@ sections:
   #   design:
   #     columns: '2'
   #     view: card
+
+  - block: markdown
+    id: media
+    design:
+      columns: '2'
+    content:
+      title: Media
+      text: |-
+        <div class="news-articles-list">
+            {{< media-release 
+                icon="https://www.inspirecareers.com/wp-content/uploads/2021/09/Spectrum_News_1.svg_.png" 
+                title="Climate change is turning California forests into 'zombies'" 
+                url="https://spectrumnews1.com/ca/la-west/environment/2024/02/10/zombie-forests-climate-change"
+                date="2024" 
+                publisher="Spectrum News"
+            >}}
+            {{< media-release 
+                icon="https://www.kindpng.com/picc/m/191-1918173_los-angeles-times-logo-png-transparent-png.png" 
+                title="Millions of California trees are dying; Joshua trees are just the latest victims" 
+                url="https://www.latimes.com/california/story/2023-08-15/california-trees-are-dying-at-an-accelerated-pace"
+                date="2023" 
+                publisher="LA Times"
+            >}}
+            {{< media-release 
+                icon="https://media.npr.org/chrome_svg/npr-logo.svg" 
+                title="Climate is changing too quickly for the Sierra Nevada’s ‘zombie forests’" 
+                url="https://www.npr.org/2023/03/13/1162042220/climate-change-sierra-nevada-zombie-forests"
+                date="2023" 
+                publisher="NPR"
+            >}}
+            {{< media-release 
+                icon="https://clipart-library.com/new_gallery/73-733661_the-new-york-times-logo-png-new-york.png" 
+                title="Mapping California’s ‘Zombie’ Forests" 
+                url="https://www.nytimes.com/interactive/2023/03/06/climate/california-zombie-forests.html"
+                date="2023" 
+                publisher="The New York Times"
+            >}}
+            {{< media-release 
+                icon="" 
+                title="Warming temperatures are creating ‘zombie forests’ in California" 
+                url="https://www.newscientist.com/article/2362602-warming-temperatures-are-creating-zombie-forests-in-california"
+                date="2023" 
+                publisher="New Scientist"
+            >}}
+            {{< media-release 
+                icon="https://www.sierraclub.org/sites/www.sierraclub.org/files/SIERRA-logo-2021-2.png" 
+                title="The Forests of the Sierra Nevada Are Full of Zombies" 
+                url="https://www.sierraclub.org/sierra/forests-sierra-nevada-zombies-climate-change"
+                date="2023" 
+                publisher="Sierra Magazine"
+            >}}
+            {{< media-release 
+                icon="https://stanfordmag.org/packs/media/images/StanfordMagazineDigitalLogo-Blk-Red-RGB-b9343de6ab2800ab825b5907a1c3dfe4.svg" 
+                title="Stanford-led study reveals a fifth of California’s Sierra Nevada conifer forests are stranded in habitats that have grown too warm for them" 
+                url="https://news.stanford.edu/stories/2023/02/zombie-forests"
+                date="2023" 
+                publisher="Stanford Report"
+            >}}
+            {{< media-release 
+                icon="https://stanfordmag.org/packs/media/images/StanfordMagazineDigitalLogo-Blk-Red-RGB-b9343de6ab2800ab825b5907a1c3dfe4.svg" 
+                title="The Heat is On" 
+                url="https://stanfordmag.org/contents/the-heat-is-on"
+                date="2021" 
+                publisher="The Stanford Magazine"
+            >}}
+            {{< media-release 
+                icon="https://news.stanford.edu/__data/assets/file/0035/128996/srlogo_light.svg" 
+                title="Stanford researchers reveal how wildfire accelerates forest changes"
+                url="https://news.stanford.edu/stories/2021/11/trees-on-the-move"
+                date="2021" 
+                publisher="Stanford Report"
+            >}}
+            {{< media-release 
+                icon="https://www.kneedeeptimes.org/wp-content/uploads/2023/09/kdtlogo3.png" 
+                title="Global Study Finds Adaptation Progress Local Not Societal" 
+                date="2021" 
+                publisher="Knee-deep Times"
+                url="https://www.kneedeeptimes.org/global-study-finds-adaptation-progress-local-not-societal/"
+            >}}
+        </div>
+
   - block: collection
+    id: publication
     content:
       title: Publications
 #      text: |-
@@ -226,10 +308,11 @@ sections:
   # #   design:
   # #     columns: '2'
   - block: markdown
+    id: contact
     content:
       title: Contact
       text: apaytonhill [at] gmail [dot] com
-      id: contact
+      
   # - block: contact
   #   id: contact
   #   content:
