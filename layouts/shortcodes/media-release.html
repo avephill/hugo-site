@@ -3,20 +3,22 @@
         display: flex;
         flex-direction: column;
         gap: 15px;
-        padding-right:100px;
+        padding-right: 100px;
     }
     .news-article {
         display: flex;
         align-items: center;
         border: 1px solid #ddd;
         padding: 10px;
+        width: 100%;
         max-width: 1000px;
         margin: 0 auto;
     }
     .news-icon {
         margin-right: 20px;
-        width: 100px; /* fixed width */
-        height: 60px; /* fixed height */
+        flex-shrink: 0;
+        width: 100px;
+        height: 60px;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -29,7 +31,7 @@
     .news-details {
         display: flex;
         flex-direction: column;
-        width: calc(100% - 120px); /* adjust width to fit within the article layout */
+        flex-grow: 1;
     }
     .news-title {
         font-size: 1.2em;

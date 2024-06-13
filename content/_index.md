@@ -164,13 +164,13 @@ sections:
       # To show all items, set `tag` to "*".
       # To filter by a specific tag, set `tag` to an existing tag name.
       # To remove the toolbar, delete the entire `filter_button` block.
-      buttons:
-        - name: All
-          tag: '*'
-        - name: Deep Learning
-          tag: Deep Learning
-        - name: Other
-          tag: Demo
+      # buttons:
+      #   - name: All
+      #     tag: '*'
+      #   - name: Deep Learning
+      #     tag: Deep Learning
+      #   - name: Other
+      #     tag: Demo
     design:
       # Choose how many columns the section has. Valid values: '1' or '2'.
       columns: '1'
@@ -213,7 +213,7 @@ sections:
                 publisher="Spectrum News"
             >}}
             {{< media-release 
-                icon="https://www.kindpng.com/picc/m/191-1918173_los-angeles-times-logo-png-transparent-png.png" 
+                icon="https://assets.stickpng.com/images/60915199f9f2080004436595.png" 
                 title="Millions of California trees are dying; Joshua trees are just the latest victims" 
                 url="https://www.latimes.com/california/story/2023-08-15/california-trees-are-dying-at-an-accelerated-pace"
                 date="2023" 
