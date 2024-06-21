@@ -1,6 +1,6 @@
 ---
 title: Zombie Forests
-summary: Vegetation-Climate Mismatch in Sierra Nevada conifer forests
+summary: Vegetation-Climate Mismatch in Sierra Nevada conifer forests.
 # tags:
 #   - SDM
 date: '2018-04-27T00:00:00Z'
