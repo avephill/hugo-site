@@ -7,9 +7,10 @@ date: '2021-12-01'
 publishDate: '2024-05-15T23:07:06.533693Z'
 publication_types:
 - article-journal
+featured: true
 publication: '*Nature Communications*'
 doi: 10.1038/s41467-021-26838-z
-abstract: Abstract             Due to climate change, plant populations experience
+abstract: Due to climate change, plant populations experience
   environmental conditions to which they are not adapted. Our understanding of the
   next century's vegetation geography depends on the distance, direction, and rate
   at which plant distributions shift in response to a changing climate. In this study

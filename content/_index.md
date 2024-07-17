@@ -201,7 +201,7 @@ sections:
   - block: collection
     id: publication
     content:
-      title: Publications
+      title: Select Publications
 #      text: |-
 #        {{% callout note %}}
 #        Quickly discover relevant content by [filtering publications](./publication/).
@@ -209,10 +209,14 @@ sections:
       filters:
         folders:
           - publication
-        exclude_featured: true
+        # featured_only: true
+        # exclude_featured: true
+      sort_by: 'featured'
+      count: 3
     design:
       columns: '2'
       view: citation
+    
   # - block: collection
   #   id: talks
   #   content:
@@ -229,85 +233,25 @@ sections:
   # #   design:
   # #     columns: '2'
 
-  - block: markdown
+  - block: collection
     id: media
     design:
       columns: '2'
+      # view: compact
+      # view: masonry
+      view: custom-media
     content:
-      title: Media
-      text: |-
-        <div class="news-articles-list">
-            {{< media-release 
-                icon="/media/news-logos/spectrum-news.png" 
-                title="Climate change is turning California forests into 'zombies'" 
-                url="https://spectrumnews1.com/ca/la-west/environment/2024/02/10/zombie-forests-climate-change"
-                date="2024" 
-                publisher="Spectrum News"
-            >}}
-            {{< media-release 
-                icon="/media/news-logos/la-times.png" 
-                title="Millions of California trees are dying; Joshua trees are just the latest victims" 
-                url="https://www.latimes.com/california/story/2023-08-15/california-trees-are-dying-at-an-accelerated-pace"
-                date="2023" 
-                publisher="LA Times"
-            >}}
-            {{< media-release 
-                icon="/media/news-logos/npr.svg" 
-                title="Climate is changing too quickly for the Sierra Nevada’s ‘zombie forests’" 
-                url="https://www.npr.org/2023/03/13/1162042220/climate-change-sierra-nevada-zombie-forests"
-                date="2023" 
-                publisher="NPR"
-            >}}
-            {{< media-release 
-                icon="/media/news-logos/new-york-times.png" 
-                title="Mapping California’s ‘Zombie’ Forests" 
-                url="https://www.nytimes.com/interactive/2023/03/06/climate/california-zombie-forests.html"
-                date="2023" 
-                publisher="The New York Times"
-            >}}
-            {{< media-release 
-                icon="/media/news-logos/new-scientist.png" 
-                title="Warming temperatures are creating ‘zombie forests’ in California" 
-                url="https://www.newscientist.com/article/2362602-warming-temperatures-are-creating-zombie-forests-in-california"
-                date="2023" 
-                publisher="New Scientist"
-            >}}
-            {{< media-release 
-                icon="/media/news-logos/sierra-magazine.png" 
-                title="The Forests of the Sierra Nevada Are Full of Zombies" 
-                url="https://www.sierraclub.org/sierra/forests-sierra-nevada-zombies-climate-change"
-                date="2023" 
-                publisher="Sierra Magazine"
-            >}}
-            {{< media-release 
-                icon="/media/news-logos/stanford-report.png" 
-                title="Stanford-led study reveals a fifth of California’s Sierra Nevada conifer forests are stranded in habitats that have grown too warm for them" 
-                url="https://news.stanford.edu/stories/2023/02/zombie-forests"
-                date="2023" 
-                publisher="Stanford Report"
-            >}}
-            {{< media-release 
-                icon="/media/news-logos/stanford-magazine.svg" 
-                title="The Heat is On" 
-                url="https://stanfordmag.org/contents/the-heat-is-on"
-                date="2021" 
-                publisher="The Stanford Magazine"
-            >}}
-            {{< media-release 
-                icon="/media/news-logos/stanford-report.png" 
-                title="Stanford researchers reveal how wildfire accelerates forest changes"
-                url="https://news.stanford.edu/stories/2021/11/trees-on-the-move"
-                date="2021" 
-                publisher="Stanford Report"
-            >}}
-            {{< media-release 
-                icon="/media/news-logos/kneedeeptimes.png" 
-                title="Global Study Finds Adaptation Progress Local Not Societal" 
-                date="2021" 
-                publisher="Knee-deep Times"
-                url="https://www.kneedeeptimes.org/global-study-finds-adaptation-progress-local-not-societal/"
-            >}}
-        </div>
+      title: Select Media
+      filters:
+        folders:
+          - media
+        # featured_only: true
+        # exclude_featured: true
+      sort_by: 'featured'
+      # sort_by: 'date'
+      count: 3
+
+
 
   - block: markdown
     id: contact

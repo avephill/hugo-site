@@ -5,7 +5,7 @@ authors:
 date: '2021-06-01'
 publishDate: '2024-05-15T23:24:16.982453Z'
 publication_types:
-- article-journal
+- op-ed
 publication: '*MOLD*'
 links:
 - name: Article Link
