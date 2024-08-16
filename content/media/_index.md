@@ -16,5 +16,5 @@ count: 20
 # Optional header image (relative to `static/media/` folder).
 banner:
   caption: ''
-  image: 'interview.jpeg'
+  image: ''
 ---
