@@ -13,12 +13,39 @@
   height: calc(100vh - 70px);
 }
 
-// For image at bottom
+// For hero image at bottom
 .img-div-bg {
   // height: 10vh;
-  bottom: 0px;
+  // bottom: 0px;
+  top: 0;
   left: 0px;
   width: 100%;
   position: absolute;
   z-index:-999;
+  min-width: 1400px; // This lets it overflow and work better on mobile
+
+}
+
+
+// To fix article title size
+.media.stream-item .article-title,
+.card-simple .article-title {
+  font-size: .9rem;
+}
+
+// Decrease text size all round
+body {
+  font-size: .9rem;
+}
+
+// Heading stuff
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  color: #313131;
 }
