@@ -3,9 +3,9 @@
 # Hugo Documentation: https://gohugo.io/getting-started/configuration/#all-configuration-settings
 # This file is formatted using YAML syntax - learn more at https://learnxinyminutes.com/docs/yaml/
 
-# to push to totol: 
+# to push to hayduke: 
 # run `hugo`
-# rsync -rlt public/ totol:avephill-hugo/ --progress
+# rsync -a public/ hayduke:~/Docker_Apps/static-web-server/public/ --progress --delete
 
 title: Avery P. Hill # Website name
 # baseURL: 'https://example.com/' # Website URL

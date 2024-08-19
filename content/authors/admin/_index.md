@@ -3,15 +3,15 @@
 title: Avery P. Hill
 
 # Name pronunciation (optional)
-name_pronunciation: Avery P. Hill
+# name_pronunciation: Avery P. Hill
 
 # Full name (for SEO)
 first_name: Avery P.
 last_name: Hill
 
 # Status emoji
-status:
-  icon: ☕️
+# status:
+#   icon: ☕️
 
 # Is this the primary user of the site?
 superuser: true
@@ -121,5 +121,5 @@ social:
 highlight_name: true
 ---
 
-Avery is a postdoctoral researcher in the Center for Biodiversity and Community Science at the California Academy of Sciences, where they leverage vast amounts of community science data to model ecological patterns across myriad landscapes. Their research is most broadly motivated by the need to understand the biological and ethical drivers of Anthropocene biogeography.
+I'm a postdoctoral researcher in the Center for Biodiversity and Community Science at the California Academy of Sciences, where I leverage vast amounts of community science data to model ecological patterns across myriad landscapes. My research is most broadly motivated by the need to understand the biological and ethical drivers of Anthropocene biogeography.
 {style="text-align: justify;"}
