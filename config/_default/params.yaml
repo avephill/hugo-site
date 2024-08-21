@@ -8,8 +8,13 @@
 appearance:
   theme_day: minimal
   # theme_night: minimal
-  font: minimal
+  font: custom #minimal
   font_size: L
+  color: river
+
+# appearance:
+#   mode: dark
+#   color: rose
 
 # SEO
 
