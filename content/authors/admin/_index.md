@@ -95,7 +95,7 @@ social:
   - icon: twitter
     icon_pack: fab
     link: https://ecoevo.social/@avephill
-    label: Follow me on Twitter
+    label: Follow me on Mastodon
     display:
       header: true
   - icon: google-scholar # Alternatively, use `google-scholar` icon from `ai` icon pack

@@ -28,10 +28,13 @@
   {{ $summary = $item.Summary }}
 {{ end }}
 
-<div class="media stream-item view-compact">
+<!-- <div class="media stream-item view-compact"> -->
+<div class="pub-list-item view-citation view-compact media stream-item">
   <div class="media-body">
 
-    <div class="section-subheading article-title mb-0 mt-0">
+    <!-- <div class="section-subheading article-title mb-0 mt-0"> -->
+    <div class="article-title mb-0 mt-0">
+
       <a target="_blank" href="{{ if $item.Params.external_url }}{{ $item.Params.external_url | safeURL }}{{ else }}{{ $link }}{{ end }}" {{ $target | safeHTMLAttr }}>{{ $item.Title }}</a>
     </div>
 
