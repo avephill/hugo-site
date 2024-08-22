@@ -1,0 +1,21 @@
+# Theme metadata
+name = "Earthy Minimalist"
+
+[light]
+  # Primary
+  primary = "#6B5B44"  # A warm, earthy brown
+
+  # Menu
+  menu_primary = "#f0ece4"  # A soft, warm off-white
+  menu_text = "#3B3A36"  # A dark, muted brown for text
+  menu_text_active = "#3B3A36"  # Same as menu text for consistency
+  menu_title = "#3B3A36"  # Same as menu text for a unified look
+
+  # Links
+  link = "#6B5B44"  # Same as primary for cohesive design
+  link_hover = "#3B3A36"  # Darker for a subtle change on hover
+  link_decoration = "underline"
+
+  # Home sections
+  home_section_odd = "#eae4db"  # A light, warm beige
+  home_section_even = "#f8f6f3"  # A very light, natural cream

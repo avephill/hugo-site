@@ -1,0 +1,59 @@
+# # Font style metadata
+# name = "Academic"
+
+# # Optional Google font URL
+# google_fonts = "family=Merriweather:wght@400;700&family=Source+Sans+Pro:wght@400;700&family=Fira+Mono"
+
+# # Font families
+# heading_font = "Merriweather"
+# body_font = "Source Sans Pro"
+# nav_font = "Source Sans Pro"
+# mono_font = "Fira Mono"
+
+# # Font style metadata
+# name = "Classic"
+
+# # Optional Google font URL
+# google_fonts = "family=Lora:wght@400;700&family=Open+Sans:wght@400;700&family=Inconsolata"
+
+# # Font families
+# heading_font = "Lora"
+# body_font = "Open Sans"
+# nav_font = "Open Sans"
+# mono_font = "Inconsolata"
+
+# # Font style metadata
+# name = "Professional"
+
+# # Optional Google font URL
+# google_fonts = "family=Playfair+Display:wght@400;700&family=Nunito:wght@400;700&family=Ubuntu+Mono"
+
+# # Font families
+# heading_font = "Playfair Display"
+# body_font = "Nunito"
+# nav_font = "Nunito"
+# mono_font = "Ubuntu Mono"
+
+# # Font style metadata
+# name = "Minimalist"
+
+# Optional Google font URL
+google_fonts = "family=Poppins:wght@400;700&family=IBM+Plex+Mono"
+
+# Font families
+heading_font = "Poppins"
+body_font = "Poppins"
+nav_font = "Poppins"
+mono_font = "IBM Plex Mono"
+
+# # Font style metadata
+# name = "Earthy Academic Minimalist"
+
+# # Optional Google font URL
+# google_fonts = "family=Merriweather:wght@300;400;700&family=Source+Sans+Pro:wght@400;700&family=Source+Code+Pro"
+
+# # Font families
+# heading_font = "Merriweather"
+# body_font = "Source Sans Pro"
+# nav_font = "Source Sans Pro"
+# mono_font = "Source Code Pro"

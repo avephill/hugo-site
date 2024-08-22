@@ -13,6 +13,11 @@
   height: calc(100vh - 70px);
 }
 
+// change the text size of the about section
+.about-bio {
+  font-size: .82rem;
+}
+
 // For hero image at bottom
 .img-div-bg {
   // height: 10vh;
@@ -39,3 +44,4 @@
   // This is the same shadow that's default
   box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2);
 }
+

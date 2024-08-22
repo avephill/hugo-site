@@ -4,17 +4,13 @@
 # This file is formatted using YAML syntax - learn more at https://learnxinyminutes.com/docs/yaml/
 
 # Appearance
-
+# These are in data/fonts and data/themes
 appearance:
-  theme_day: minimal
+  theme_day: custom #earth #forest #minimal
   # theme_night: minimal
   font: custom #minimal
   font_size: L
-  color: river
 
-# appearance:
-#   mode: dark
-#   color: rose
 
 # SEO
 
@@ -54,7 +50,7 @@ footer:
     license:
       enable: true
       allow_derivatives: false
-      share_alike: true
+      share_alike: false
       allow_commercial: false
 
 # Localization
