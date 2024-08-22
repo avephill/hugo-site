@@ -33,7 +33,9 @@
   font-size: .9rem;
 }
 
-// // Decrease text size all round
-// body {
-//   font-size: .9rem;
-// }
+
+/* Removed hover effects */
+.card:hover {
+  // This is the same shadow that's default
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2);
+}

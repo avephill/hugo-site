@@ -2,11 +2,11 @@
 title: Low-Elevation Conifers in California's Sierra Nevada Are out of Equilibrium
   with Climate
 authors:
-- Avery P Hill
-- Connor J Nolan
-- Kyle S Hemes
-- Trevor W Cambron
-- Christopher B Field
+- Avery P. Hill
+- Connor J. Nolan
+- Kyle S. Hemes
+- Trevor W. Cambron
+- Christopher B. Field
 date: '2023-02-01'
 featured: true
 publishDate: '2024-05-15T23:07:06.545856Z'
