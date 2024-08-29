@@ -36,13 +36,14 @@
     <div class="article-title mb-0 mt-0">
 
       <a target="_blank" href="{{ if $item.Params.external_url }}{{ $item.Params.external_url | safeURL }}{{ else }}{{ $link }}{{ end }}" {{ $target | safeHTMLAttr }}>{{ $item.Title }}</a>
-    </div>
+    <!-- </div> -->
 
     {{ with $item.Params.publisher }}
-    <div class="article-publisher" style="font-style: italic;">
-      {{ . }}
-    </div>
+    <!-- <div class="article-publisher" style="font-style: italic;"> -->
+      <i>{{ . }}</i>
+    
     {{ end }}
+    </div>
 
     {{ with $summary }}
     <a href="{{ $link }}" {{ $target | safeHTMLAttr }} class="summary-link">

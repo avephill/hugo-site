@@ -1,5 +1,5 @@
 ---
-title: Climate is changing too quickly for the Sierra Nevada’s ‘zombie forests’
+title: Climate is changing too quickly for the Sierra Nevada’s ‘zombie forests.’
 authors:
 - Joe Hernandez
 date: '2023-03-13'

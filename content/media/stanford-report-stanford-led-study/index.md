@@ -1,5 +1,5 @@
 ---
-title: Stanford-led study reveals a fifth of California’s Sierra Nevada conifer forests are stranded in habitats that have grown too warm for them
+title: Stanford-led study reveals a fifth of California’s Sierra Nevada conifer forests are stranded in habitats that have grown too warm for them.
 authors:
 - Rob Jordan
 date: '2023-02-28'

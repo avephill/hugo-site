@@ -1,5 +1,5 @@
 ---
-title: Climate change is turning California forests into 'zombies'
+title: Climate change is turning California forests into 'zombies.'
 authors:
 - Jeremy Lindenfeld
 date: '2024-02-09'

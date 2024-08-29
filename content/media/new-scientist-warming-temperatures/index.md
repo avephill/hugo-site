@@ -1,5 +1,5 @@
 ---
-title: Warming temperatures are creating ‘zombie forests’ in California
+title: Warming temperatures are creating ‘zombie forests’ in California.
 authors:
 - Lois Parshley
 date: '2023-03-03'

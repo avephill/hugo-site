@@ -1,5 +1,5 @@
 ---
-title: The Forests of the Sierra Nevada Are Full of Zombies
+title: The Forests of the Sierra Nevada Are Full of Zombies.
 authors:
 - Grace van Deelen
 date: '2023-03-01'

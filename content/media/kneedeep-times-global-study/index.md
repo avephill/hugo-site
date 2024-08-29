@@ -1,5 +1,5 @@
 ---
-title: Global Study Finds Adaptation Progress Local Not Societal
+title: Global Study Finds Adaptation Progress Local Not Societal.
 authors:
 - Sierra Garcia
 date: '2021-11-18'

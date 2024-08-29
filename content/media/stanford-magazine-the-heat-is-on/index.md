@@ -1,5 +1,5 @@
 ---
-title: The Heat is On
+title: The Heat is On.
 authors:
 - Katherine Ellison
 date: '2021-09-01'

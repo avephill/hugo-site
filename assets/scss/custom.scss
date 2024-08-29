@@ -9,35 +9,71 @@
 //   height: calc(100vh - 70px);
 // }
 
-.wg-about-biography {
-  height: calc(100vh - 70px);
-  // font-size: .82rem;
-}
+// .wg-about-biography {
+//   // height: calc(100vh - 70px);
+//   // font-size: .82rem;
+// }
 
 // change the text size of the about section
 .about-bio {
   font-size: .82rem;
 }
 
+// # This was helpful
+#about {
+  // height: calc(100vh - 20px);
+  bottom: 0;
+  height: 100vh;
+  z-index:-999;
+}
+
 // For hero image at bottom
 .img-div-bg {
   // height: 10vh;
-  // bottom: 0px;
-  top: 0;
+  bottom: 0px;
+  // top: 0;
   left: 0px;
-  width: 100%;
-  position: absolute;
+  // width: 100%;
+  // This was critical for overflow
+  width: 1600px;
+  height: 100vh;
+  // position: absolute;
+
+  position: fixed;
+
   z-index:-999;
-  min-width: 1400px; // This lets it overflow and work better on mobile
+  // min-width: 1400px; // This lets it overflow and work better on mobile
+  @media screen and (min-width: 768px) {
+    bottom: 70px;
+  }
+  // @media screen and (min-width: 1400px) {
+  //   bottom: 70px;
+  // }
 
 }
 
+.page-footer {
+  z-index: 10;
+}
+
+
+.wg-about-biography{
+  bottom: Opx;
+}
+// .wg-about .background-img { 
+//   position: absolute;
+//   bottom: Opx;
+//   @media screen and (min-width: 768px) {
+//     bottom: 70px;
+//   }
+// }
+
 
 // To fix article title size
-// .media.stream-item .article-title,
-// .card-simple .article-title {
-//   // font-size: .9rem;
-// }
+.media.stream-item .article-title,
+.card-simple .article-title {
+  font-size: 1.1rem;
+}
 
 
 /* Removed hover effects */
@@ -46,3 +82,10 @@
   box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2);
 }
 
+// For stick section headings
+.section-heading h1 { 
+  margin: 0 0 10px 0; 
+  position: sticky;
+  position: -webkit-sticky;
+  top: 150px;
+}

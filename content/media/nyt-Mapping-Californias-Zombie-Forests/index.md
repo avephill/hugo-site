@@ -1,5 +1,5 @@
 ---
-title: Mapping California’s ‘Zombie’ Forests
+title: Mapping California’s ‘Zombie’ Forests.
 authors:
 - Elena Shao
 date: '2023-03-06'

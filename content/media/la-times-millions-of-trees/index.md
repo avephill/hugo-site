@@ -1,5 +1,5 @@
 ---
-title: Millions of California trees are dying; Joshua trees are just the latest victims
+title: Millions of California trees are dying; Joshua trees are just the latest victims.
 authors:
 - Hayley Smith
 date: '2023-08-15'

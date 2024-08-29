@@ -1,5 +1,5 @@
 ---
-title: Stanford researchers reveal how wildfire accelerates forest changes
+title: Stanford researchers reveal how wildfire accelerates forest changes.
 authors:
 - Rob Jordan
 date: '2021-11-15'

@@ -1,5 +1,5 @@
 ---
-title: California’s mountains are too warm for some trees to survive. Inside these ‘zombie forests’
+title: California’s mountains are too warm for some trees to survive. Inside these ‘zombie forests.’
 authors:
 - Alex Wigglesworth
 - Ian James
