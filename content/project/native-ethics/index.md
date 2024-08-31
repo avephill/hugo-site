@@ -1,15 +1,15 @@
 ---
-title: Zombie Forests
-summary: A Stanford University - CalAcademy collaboration studying vegetation-Climate Mismatch in Sierra Nevada conifer forests.
+title: Nativeness and its ethical implications
+summary: The nativeness of a species is often an important consideration in conservation decisions, but becomes increasingly abstruse as environments change and species migrate.
 tags:
   - featured
-# date: '2018-04-27T00:00:00Z'
+date: '2018-04-27T00:00:00Z'
 
 # Optional external URL for project (replaces project detail page).
 # external_link: ''
 
 image:
-  # caption: Photo from Avery Hill
+  caption: Photo from Avery Hill
   focal_point: Smart
 
 # links:

@@ -100,8 +100,8 @@ sections:
     design:
       columns: '2'
   
-  # - block: portfolio
-  - block: collection
+  - block: portfolio
+  # - block: collection
     id: projects
     content:
       title: Projects
@@ -115,13 +115,11 @@ sections:
       # To show all items, set `tag` to "*".
       # To filter by a specific tag, set `tag` to an existing tag name.
       # To remove the toolbar, delete the entire `filter_button` block.
-      # buttons:
-      #   - name: All
-      #     tag: '*'
-      #   - name: Deep Learning
-      #     tag: Deep Learning
-      #   - name: Other
-      #     tag: Demo
+      buttons:
+        - name: Featured
+          tag: featured
+        - name: All
+          tag: '*'
     design:
       # Choose how many columns the section has. Valid values: '1' or '2'.
       columns: '2'
