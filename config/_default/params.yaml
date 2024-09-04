@@ -6,7 +6,8 @@
 # Appearance
 # These are in data/fonts and data/themes
 appearance:
-  theme_day: custom #earth #forest #minimal
+  theme_day: mistyforest #custom #earth #forest #minimal
+  # theme_day: custom
   # theme_night: minimal
   font: custom #minimal
   font_size: L
