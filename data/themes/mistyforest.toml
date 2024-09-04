@@ -1,0 +1,21 @@
+# Theme metadata
+name = "Misty Forest Minimalist"
+
+[light]
+  # Primary
+  primary = "#60734D"  # A soft, natural green inspired by the trees
+
+  # Menu
+  menu_primary = "#E1E2DC"  # A misty, light gray-green reflecting the fog
+  menu_text = "#4B4A48"  # A muted charcoal gray for text, elegant and subdued
+  menu_text_active = "#3F403D"  # A darker gray for an active state
+  menu_title = "#4B4A48"  # Same as menu text for consistency
+
+  # Links
+  link = "#60734D"  # Same as primary for cohesive design
+  link_hover = "#4B4A48"  # Darker for subtle change on hover
+  link_decoration = "underline"
+
+  # Home sections
+  home_section_odd = "#D6D8D1"  # A muted, misty green for depth
+  home_section_even = "#F2F3F0"  # A very light, mist-inspired gray-white
