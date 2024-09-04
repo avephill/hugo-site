@@ -3,6 +3,8 @@ date: "2024-04-27T00:00:00Z"
 focal_point: Smart
 summary: A cheap, DIY air quality sensor with esphome and homeassistant
 title: DIY Air Quality Sensor
+tags:
+  - featured
 ---
 
 My folks live out in the woods, and are grappling with the the recent wildfires in California that have resulted from the displacement of indigenous peoples, a century of wildfire suppression, and climate change.

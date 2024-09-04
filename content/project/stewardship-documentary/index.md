@@ -4,6 +4,7 @@ summary: A short student-made documentary about the meaning of stewardship in th
 # tags:
 #   - Demo
 date: "2024-04-27"
+custom_order: 5
 
 # Optional external URL for project (replaces project detail page).
 # external_link: https://www.globalchange.gov/our-work/national-nature-assessment
