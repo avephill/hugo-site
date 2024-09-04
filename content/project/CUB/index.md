@@ -5,11 +5,13 @@ tags:
   - featured
 date: '2022-09-27T00:00:00Z'
 
+custom_order: 3
+
 # Optional external URL for project (replaces project detail page).
 # external_link: ''
 
 image:
-  caption: Photo from Avery Hill
+  # caption: Photo from Avery Hill
   focal_point: Smart
 
 # links:
@@ -30,10 +32,12 @@ url_video: ''
 slides: ""
 ---
 
-This project identifies regions of conifer forests in the Sierra Nevada mountains that are at risk of loss due to climate change, that we’ve been referring to as ‘zombie forests.’ We think that these forests have a number of distinct properties related to vulnerability, wildfire behavior, and management. Unlike most studies of vegetation change that are either historical or future oriented, our maps show us where transitions are happening and continue to happen today. These forests effectively serve as real-time case studies of how to protect and regenerate conifer forests and all the species and processes that depend on them.
+The regional conservation strategy for the San Francisco Bay Area—the Conservation Lands Network (CLN)—collaboratively determines conservation priorities across the region. 
+Since its inception in 2011 the strategies have practically omitted all urban lands from planning efforts, despite the large proportion of urban land in the bay area (15% of all land) and the abundance of urban observations for CLN target species (e.g. Arboreal salamander, Dark-eyed junco, Gray fox). 
 
-Our continued work now builds on these maps, and uses them as case studies to:
-1. Investigate fire behavior in these forests to inform fire risk and management
-2. Identify high-resolution indicator species of zombie forests through iNaturalist and community science campaigns
-3. Develop effective and ethical management options for the expected transition of zombie forests to chaparral or mixed hardwood forests.
+In this project, we leveraged the massive amount of community science data available from iNaturalist to extend the current maps of conservation target species into the urban landscape, thereby recognizing and quantifying the contribution of urban lands to regional conservation goals. 
+We identified 18 target species, and supplemented existing iNaturalist observation data for these species with local community science initiatives, including a regional campaign and a partnership with a community based organization, YES Nature to Neighborhoods, on a community bioblitz. 
+We used these observations and myriad environmental data including climate, soil, and housing density to train a MaxEnt species distribution model for each species. 
 
+With these models, we identify characteristics that demarcate suitable urban habitat and produce maps for target species. 
+This work is a critical first step towards properly recognizing the contribution of urban areas to conservation goals and allowing land managers to incorporate all lands into regional conservation strategy.

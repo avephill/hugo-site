@@ -1,9 +1,11 @@
 ---
 title: Zombie Forests
-summary: A Stanford University - CalAcademy collaboration studying vegetation-Climate Mismatch in Sierra Nevada conifer forests.
+summary: Identifying Vegetation-Climate Mismatch in Sierra Nevada conifer forests and its impact on vegetation transitions and fire regime.
 tags:
   - featured
 # date: '2018-04-27T00:00:00Z'
+
+custom_order: 1
 
 # Optional external URL for project (replaces project detail page).
 # external_link: ''
