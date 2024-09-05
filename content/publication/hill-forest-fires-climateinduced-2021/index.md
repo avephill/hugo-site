@@ -8,6 +8,8 @@ publishDate: '2024-05-15T23:07:06.533693Z'
 publication_types:
 - article-journal
 featured: true
+tags:
+  - Vegetation-Climate Mismatch
 publication: '*Nature Communications*'
 doi: 10.1038/s41467-021-26838-z
 abstract: Due to climate change, plant populations experience

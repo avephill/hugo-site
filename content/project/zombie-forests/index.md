@@ -3,8 +3,10 @@ title: Zombie Forests
 summary: Identifying Vegetation-Climate Mismatch in Sierra Nevada conifer forests and its impact on vegetation transitions and fire regime.
 tags:
   - featured
+  - Vegetation-Climate Mismatch
 date: '2018-04-27'
 # date_end: 2022-04-27
+show_related: false
 
 
 custom_order: 1

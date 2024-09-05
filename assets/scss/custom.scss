@@ -36,21 +36,50 @@
   // width: 100%;
   // This was critical for overflow
   width: 1600px;
+  // min-width:100%;
   height: 100vh;
   // position: absolute;
 
   position: fixed;
+  // overflow: hidden;
 
   z-index:-999;
   // min-width: 1400px; // This lets it overflow and work better on mobile
-  @media screen and (min-width: 768px) {
-    bottom: 70px;
-  }
+  // @media screen and (min-width: 768px) {
+  //   bottom: 70px;
+  // }
   // @media screen and (min-width: 1400px) {
   //   bottom: 70px;
   // }
 
+  // Apply media query to adjust behavior for screens smaller than 500px
+  // @media screen and (max-width: 1500px) {
+  //   width: auto; /* Let the background image overflow in width */
+  // }
+
+  // @media screen and (min-width: 1768px) {
+  //   bottom: 70px;
+  // }
+
 }
+
+
+
+// .img-div-bg {
+//   bottom: 0px;
+//   left: 0px;
+//   // width: 100vw;
+//   height: 100vh;
+//   position: fixed;
+//   z-index: -999;
+//   min-width: 100vw;
+//   // object-fit: cover;
+//   overflow: hidden;
+
+//   @media screen and (min-width: 768px) {
+//     bottom: 70px;
+//   }
+// }
 
 .page-footer {
   z-index: 10;
