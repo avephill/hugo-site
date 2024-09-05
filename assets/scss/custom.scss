@@ -33,7 +33,6 @@
   bottom: 0px;
   // top: 0;
   left: 0px;
-  // width: 100%;
   // This was critical for overflow
   width: 1600px;
   // min-width:100%;
@@ -44,42 +43,14 @@
   // overflow: hidden;
 
   z-index:-999;
-  // min-width: 1400px; // This lets it overflow and work better on mobile
-  // @media screen and (min-width: 768px) {
-  //   bottom: 70px;
-  // }
-  // @media screen and (min-width: 1400px) {
-  //   bottom: 70px;
-  // }
-
-  // Apply media query to adjust behavior for screens smaller than 500px
-  // @media screen and (max-width: 1500px) {
-  //   width: auto; /* Let the background image overflow in width */
-  // }
-
-  // @media screen and (min-width: 1768px) {
-  //   bottom: 70px;
-  // }
+  
+  /* When the parent div width is larger than 1600px, use 100vw */
+  @media screen and (min-width: 1600px) {
+    width: 100vw;
+  }
 
 }
 
-
-
-// .img-div-bg {
-//   bottom: 0px;
-//   left: 0px;
-//   // width: 100vw;
-//   height: 100vh;
-//   position: fixed;
-//   z-index: -999;
-//   min-width: 100vw;
-//   // object-fit: cover;
-//   overflow: hidden;
-
-//   @media screen and (min-width: 768px) {
-//     bottom: 70px;
-//   }
-// }
 
 .page-footer {
   z-index: 10;
@@ -89,13 +60,6 @@
 .wg-about-biography{
   bottom: Opx;
 }
-// .wg-about .background-img { 
-//   position: absolute;
-//   bottom: Opx;
-//   @media screen and (min-width: 768px) {
-//     bottom: 70px;
-//   }
-// }
 
 
 // To fix article title size
