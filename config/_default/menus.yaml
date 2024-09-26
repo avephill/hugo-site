@@ -31,7 +31,7 @@ main:
   #   url: 'diy'
   #   weight: 65
   - name: Resources
-    url: '{{ .Site.BaseURL }}/resource'
+    url: '/resource'
     weight: 65
   - name: CV
     url: 'https://avephill.com/uploads/cv.pdf'
