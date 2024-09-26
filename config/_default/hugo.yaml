@@ -8,7 +8,9 @@
 # rsync -a public/ hayduke:~/Docker_Apps/static-web-server/public/ --progress --delete
 
 title: Avery P. Hill # Website name
-baseURL: "https://avephill.kasil.club/" # Website URL
+# baseURL: "https://avephill.kasil.club/" # Website URL
+# This didn't work
+baseURL: "https://avephill.com/"
 
 
 ############################
