@@ -1,6 +1,6 @@
 // Change icons in about
 .big-icon {
-  font-size: 1rem;
+  font-size: 0.9rem;
   color: grey;
 }
 
@@ -16,7 +16,8 @@
 
 // change the text size of the about section
 .about-bio {
-  font-size: .82rem;
+  font-size: 0.8rem;
+  line-height: 1.4;
 }
 
 // # This was helpful
@@ -24,7 +25,7 @@
   // height: calc(100vh - 20px);
   bottom: 0;
   height: 100vh;
-  z-index:-999;
+  z-index: -999;
 }
 
 // For hero image at bottom
@@ -42,43 +43,75 @@
   position: fixed;
   // overflow: hidden;
 
-  z-index:-999;
-  
+  z-index: -999;
+
   /* When the parent div width is larger than 1600px, use 100vw */
   @media screen and (min-width: 1600px) {
     width: 100vw;
   }
-
 }
-
 
 .page-footer {
   z-index: 10;
+  padding: 1rem 0;
+  font-size: 0.8rem;
 }
 
-
-.wg-about-biography{
+.wg-about-biography {
   bottom: Opx;
 }
-
 
 // To fix article title size
 .media.stream-item .article-title,
 .card-simple .article-title {
-  font-size: 1.1rem;
+  font-size: 1rem;
 }
 
-
 /* Removed hover effects */
+.card {
+  border: none;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.2s ease;
+  margin-bottom: 1rem;
+}
+
 .card:hover {
-  // This is the same shadow that's default
-  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 // For stick section headings
-.section-heading h1 { 
-  margin: 0 0 10px 0; 
+.section-heading h1 {
+  margin: 0 0 8px 0;
   position: sticky;
   position: -webkit-sticky;
   top: 150px;
+  font-size: 1.5rem;
+}
+
+// Reduce general text size
+body {
+  font-size: 0.9rem;
+}
+
+// Make navigation more compact
+.navbar {
+  padding: 0.5rem 1rem;
+}
+
+// Reduce spacing between items
+.article-style {
+  margin-top: 1rem;
+  line-height: 1.5;
+}
+
+// Make buttons more minimal
+.btn {
+  border-radius: 3px;
+  padding: 0.4rem 0.8rem;
+}
+
+// Reduce spacing in lists
+ul,
+ol {
+  margin-bottom: 0.8rem;
 }

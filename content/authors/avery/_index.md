@@ -91,7 +91,7 @@ education:
 social:
   - icon: envelope
     icon_pack: fas
-    link: '/#contact'
+    link: "/#contact"
   - icon: twitter
     icon_pack: fab
     link: https://ecoevo.social/@avephill
@@ -121,5 +121,5 @@ social:
 highlight_name: true
 ---
 
-I'm a postdoctoral researcher in the Center for Biodiversity and Community Science at the California Academy of Sciences, where I leverage vast amounts of community science data to model ecological patterns across myriad landscapes. My research is most broadly motivated by the need to understand the biological and ethical drivers of Anthropocene biogeography.
+I’m a postdoctoral researcher in the Center for Biodiversity and Community Science at the California Academy of Sciences, where I leverage large amounts of species occurrence data to model ecological patterns across diverse landscapes. My research is most broadly motivated by the need to understand the biological and ethical drivers of Anthropocene biogeography. My practical areas of focus include urban ecosystems and climate-stressed montane forests in western North America.
 {style="text-align: justify;"}

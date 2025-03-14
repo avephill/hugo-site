@@ -3,7 +3,7 @@
 # Hugo Documentation: https://gohugo.io/getting-started/configuration/#all-configuration-settings
 # This file is formatted using YAML syntax - learn more at https://learnxinyminutes.com/docs/yaml/
 
-# to push to hayduke: 
+# to push to hayduke:
 # run `hugo`
 # rsync -a public/ hayduke:~/Docker_Apps/static-web-server/public/ --progress --delete
 
@@ -11,7 +11,6 @@ title: Avery P. Hill # Website name
 # baseURL: "https://avephill.kasil.club/" # Website URL
 # This didn't work
 baseURL: "https://avephill.com/"
-
 
 ############################
 ## LANGUAGE
@@ -29,24 +28,25 @@ removePathAccents: true
 # share: false
 enableGitInfo: false
 summaryLength: 30
-paginate: 10
+pagination:
+  pagerSize: 10
 enableEmoji: true
 enableRobotsTXT: true
 footnotereturnlinkcontents: <sup>^</sup>
 ignoreFiles: [\.ipynb$, .ipynb_checkpoints$, \.Rmd$, \.Rmarkdown$, _cache$]
 permalinks:
-  event: '/talk/:slug/'
-  tags: '/tag/:slug/'
-  categories: '/category/:slug/'
-  publication_types: '/publication-type/:slug/'
+  event: "/talk/:slug/"
+  tags: "/tag/:slug/"
+  categories: "/category/:slug/"
+  publication_types: "/publication-type/:slug/"
 disableAliases: true
 outputs:
   home: [HTML, RSS, JSON, WebAppManifest, headers, redirects]
   section: [HTML, RSS]
 imaging:
-  resampleFilter: lanczos
+  resampleFilter: Lanczos
   quality: 75
-  anchor: smart
+  anchor: Smart
 timeout: 600000
 taxonomies:
   tag: tags
