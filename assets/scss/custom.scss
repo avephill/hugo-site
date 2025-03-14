@@ -200,3 +200,131 @@ a {
     text-underline-offset: 2px;
   }
 }
+
+// Elegant styling for showcase images
+.showcase-image {
+  border: 1px solid #f8f7f4 !important;
+  border-radius: 2px !important;
+  box-shadow: 0 4px 12px rgba(96, 115, 77, 0.1) !important;
+  padding: 6px !important;
+  background-color: #fcfcfa !important;
+  transition: all 0.3s ease !important;
+
+  &:hover {
+    box-shadow: 0 6px 18px rgba(96, 115, 77, 0.15) !important;
+    transform: translateY(-3px) !important;
+    border-color: #f2f1ec !important;
+  }
+}
+
+// Decrease line spacing in publications section
+.view-citation p,
+.view-citation .article-style,
+.view-citation .section-subheading {
+  line-height: 1.15 !important;
+  margin-bottom: 0.2rem !important;
+}
+
+.pub-list-item {
+  margin-bottom: 1rem !important;
+
+  .article-title {
+    margin-bottom: 0.1rem !important;
+  }
+}
+
+.pub-publication {
+  line-height: 1.1 !important;
+  font-style: italic;
+  margin-top: 0 !important;
+}
+
+// Publication links style
+.btn-links {
+  margin-top: 0 !important;
+  display: inline-flex !important;
+  flex-wrap: wrap !important;
+  gap: 0.1rem !important;
+  align-items: center !important;
+
+  .btn-outline-primary {
+    padding: 0.05rem 0.25rem !important;
+    margin: 0 !important;
+    font-size: 0.5rem !important;
+    line-height: 1 !important;
+    letter-spacing: 0 !important;
+    opacity: 0.7 !important;
+    border: none !important;
+    background: none !important;
+    color: #60734d !important;
+    font-family: "Source Sans Pro", sans-serif !important;
+
+    &:not(:last-child):after {
+      content: "·";
+      margin-left: 0.2rem;
+      opacity: 0.4;
+    }
+
+    &:hover {
+      opacity: 1 !important;
+      background: none !important;
+      transform: none !important;
+      text-decoration: underline !important;
+      text-underline-offset: 2px !important;
+    }
+  }
+}
+
+// Publication authors and title spacing
+.article-metadata {
+  line-height: 1.1 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+// Make DOI and other links more compact
+.btn-links a {
+  display: inline-block !important;
+  text-transform: lowercase !important;
+  font-weight: 300 !important;
+}
+
+.btn-page-header {
+  padding: 0.08rem 0.3rem !important;
+  margin: 0 !important;
+  font-size: 0.6rem !important;
+  line-height: 1 !important;
+  letter-spacing: 0 !important;
+  text-transform: lowercase !important;
+  font-weight: 300 !important;
+  border: none !important;
+  background: none !important;
+  color: #60734d !important;
+  opacity: 0.7;
+  font-family: "Source Sans Pro", sans-serif !important;
+
+  &:not(:last-child) {
+    margin-right: 0.2rem !important;
+  }
+
+  &:hover {
+    opacity: 1 !important;
+    background: none !important;
+    transform: none !important;
+    text-decoration: underline !important;
+    text-underline-offset: 2px !important;
+    color: #424530 !important;
+  }
+}
+
+// Remove any conflicting styles from parent classes
+.btn-outline-primary.btn-page-header {
+  border: none !important;
+  background: none !important;
+  box-shadow: none !important;
+}
+
+// Ensure proper spacing between buttons
+.btn-links .btn-page-header {
+  margin-right: 0.2rem !important;
+}
