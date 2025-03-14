@@ -37,14 +37,14 @@
 # # Font style metadata
 # name = "Minimalist"
 
-# Optional Google font URL
-google_fonts = "family=Poppins:wght@400;700&family=IBM+Plex+Mono"
+# # Optional Google font URL
+# google_fonts = "family=Poppins:wght@400;700&family=IBM+Plex+Mono"
 
-# Font families
-heading_font = "Poppins"
-body_font = "Poppins"
-nav_font = "Poppins"
-mono_font = "IBM Plex Mono"
+# # Font families
+# heading_font = "Poppins"
+# body_font = "Poppins"
+# nav_font = "Poppins"
+# mono_font = "IBM Plex Mono"
 
 # # Font style metadata
 # name = "Earthy Academic Minimalist"
@@ -57,3 +57,15 @@ mono_font = "IBM Plex Mono"
 # body_font = "Source Sans Pro"
 # nav_font = "Source Sans Pro"
 # mono_font = "Source Code Pro"
+
+# Font style metadata
+name = "Misty Forest Typography"
+
+# Optional Google font URL
+google_fonts = "family=Playfair+Display:wght@400;500;600&family=Source+Sans+Pro:wght@300;400;600&family=Source+Code+Pro"
+
+# Font families
+heading_font = "Playfair Display"
+body_font = "Source Sans Pro"
+nav_font = "Source Sans Pro"
+mono_font = "Source Code Pro"
