@@ -6,7 +6,6 @@ title: DIY Air Quality Sensor
 tags:
   - diy
   - featured
-
 ---
 
 My folks live out in the woods, and are grappling with the the recent wildfires in California that have resulted from the displacement of indigenous peoples, a century of wildfire suppression, and climate change.
@@ -47,40 +46,23 @@ An exhaustive list of all materials used in this project (total = \$77, \$61 of 
 
 # The Sensor
 
-<figure>
-<img
-src="./DIY%20Air%20Quality%20Sensor/9a60c8fe262c1832fcdd3971ecdedc1455e7b359.jpeg"
-title="wikilink" alt="aqi-materials1.jpeg" />
-<figcaption aria-hidden="true">aqi-materials1.jpeg</figcaption>
-</figure>
+<img src="./DIY%20Air%20Quality%20Sensor/9a60c8fe262c1832fcdd3971ecdedc1455e7b359.jpeg" alt="AQI sensor materials" width="450" style="display: block; margin: 0 auto;">
 
 ## Wiring
 
 ### PMS5003
 
-<figure>
-<img
-src="./DIY%20Air%20Quality%20Sensor/5cc595c9acb760865f7e23c961f06dd41b50f621.png"
-title="wikilink" alt="Pastedimage20240619142006.png" />
-<figcaption
-aria-hidden="true">Pastedimage20240619142006.png</figcaption>
-</figure>
+<img src="./DIY%20Air%20Quality%20Sensor/5cc595c9acb760865f7e23c961f06dd41b50f621.png" alt="PMS5003 wiring diagram" width="450" style="display: block; margin: 0 auto;">
 
-To connect the *PMS5003* you must clip the ends and solder one end of dupont wire onto the wires coming out of the sensor.
-![aqi-soldering.jpeg](./DIY%20Air%20Quality%20Sensor/4911f4f03e46585aca43f9931cdc00a776945d24.jpeg "wikilink")
+To connect the _PMS5003_ you must clip the ends and solder one end of dupont wire onto the wires coming out of the sensor.
+<img src="./DIY%20Air%20Quality%20Sensor/4911f4f03e46585aca43f9931cdc00a776945d24.jpeg" alt="Soldering the sensor" width="450" style="display: block; margin: 0 auto;">
 
-Then we connect the other ends of the dupont wires to the corresponding pins on the *ESP32* board. Don't mind the *DHT22* humidity sensor yet
-![aqi-assembled.jpeg](./DIY%20Air%20Quality%20Sensor/92ae59bacf2790dba6ffab590f763f966c29c01e.jpeg "wikilink")
+Then we connect the other ends of the dupont wires to the corresponding pins on the _ESP32_ board. Don't mind the _DHT22_ humidity sensor yet
+<img src="./DIY%20Air%20Quality%20Sensor/92ae59bacf2790dba6ffab590f763f966c29c01e.jpeg" alt="Assembled sensor" width="450" style="display: block; margin: 0 auto;">
 
 ### DHT22 Humidity Sensor
 
-<figure>
-<img
-src="./DIY%20Air%20Quality%20Sensor/61581c0747e8f268b18a9f5edd31135e1da447c3.png"
-title="wikilink" alt="Pastedimage20240619143426.png" />
-<figcaption
-aria-hidden="true">Pastedimage20240619143426.png</figcaption>
-</figure>
+<img src="./DIY%20Air%20Quality%20Sensor/61581c0747e8f268b18a9f5edd31135e1da447c3.png" alt="DHT22 wiring diagram" width="450" style="display: block; margin: 0 auto;">
 
 Wire it up with the socket-socket dupont connectors, no soldering needed here. The picture at the end of the previous section shows what it looks like wired up.
 
@@ -93,7 +75,7 @@ I use pip as a python package manager. It should be installed by default with py
 
 download the esphome package
 
-``` bash
+```bash
 pip install esphome
 ```
 
@@ -128,8 +110,8 @@ wifi:
 captive_portal:
 
 uart:
-  tx_pin: GPIO17 
-  rx_pin: GPIO16 
+  tx_pin: GPIO17
+  rx_pin: GPIO16
   baud_rate: 9600
 
 sensor:
@@ -151,11 +133,11 @@ sensor:
 
 switch:
   - platform: gpio
-    pin: 
+    pin:
       number: GPIO21
     id: pms_set
     name: "Start measuring"
-  
+
 interval:
   - interval: 120s
     then:
@@ -164,13 +146,13 @@ interval:
       - switch.turn_off: pms_set
 ```
 
-``` bash
+```bash
 esphome air-quality.yaml run
 ```
 
 It compiled, but I received the following error
 
-``` bash
+```bash
 INFO Successfully compiled program.
 INFO Resolving IP address of barntank_sensor.local
 ERROR Error resolving IP address of barntank_sensor.local. Is it connected to WiFi?
@@ -180,11 +162,11 @@ ERROR Error resolving IP address: Error resolving address with mDNS: Did not res
 
 After about an hour of trouble shooting I realized it was because the microUSB cable I was using does not transfer data, it only charges devices, which is the case with [some cheap cables](https://www.quora.com/Are-some-USB-cables-for-power-only-no-data-Is-there-a-quick-way-to-tell-by-looking?share=1). After replacing the cable with another microUSB I had lying around, it worked.
 
-It's gonna compile and take a few minutes. When prompted, select the option to flash over 'serial' i.e. USB.
+It's gonna compile and take a few minutes. When prompted, select the option to flash over 'serial' i.e. USB.
 
 If you change the configuration and flash it again you can use the following command to flash it over wifi
 
-``` bash
+```bash
 esphome water.yaml run --upload-port XX.XX.XX.XX
 ```
 
@@ -195,7 +177,7 @@ Now the sensor should be set up
 
 ## Homeassistant Server
 
-This part is pretty easy, but opens up pandora's box. There are so many things you *can* do. But to integrate our sensor it's pretty easy.
+This part is pretty easy, but opens up pandora's box. There are so many things you _can_ do. But to integrate our sensor it's pretty easy.
 
 So we're gonna install Home Assistant on a raspberry pi 4. You can install Home Assistant software on a bunch of different machines/computers, but raspberry pis are cheap and effective.
 
@@ -211,13 +193,13 @@ Go to the `Overview` dashboard tab in the sidebar.
 Edit the dashboard by clicking the pencil in the top right
 Click `Add Card` in the bottom right
 Search by entity
-![Screenshot 2024-06-19 at 2.48.09 PM.png](./DIY%20Air%20Quality%20Sensor/682150a95dd16c338868e98d4d2bc3a7898e8dbe.png "wikilink")
+<img src="./DIY%20Air%20Quality%20Sensor/682150a95dd16c338868e98d4d2bc3a7898e8dbe.png" alt="Home Assistant dashboard" width="450" style="display: block; margin: 0 auto;">
 And add the card once you've identified the sensor or set of sensors you would like to add.
 Now you can customize how to display the sensor data in your Home Assistant dashboard!
 
 I use the following custom card configuration to show PM2.5 as AQI categories
 
-``` yaml
+```yaml
 type: gauge
 entity: sensor.particulate_matter_2_5um_concentration_2
 needle: true
@@ -225,44 +207,34 @@ min: 0
 max: 300
 segments:
   - from: 0
-    color: '#00e400'
+    color: "#00e400"
     label: Good
   - from: 12
-    color: '#ffff00'
+    color: "#ffff00"
     label: Moderate
   - from: 35.5
-    color: '#ff7e00'
+    color: "#ff7e00"
     label: Unhealthy for sensitive groups
   - from: 55.5
-    color: '#ff0000'
+    color: "#ff0000"
     label: Unhealthy
   - from: 150.5
-    color: '#8f3f97'
+    color: "#8f3f97"
     label: Very Unhealthy
   - from: 250.5
-    color: '#800000'
+    color: "#800000"
     label: Hazardous
 name: Air Quality (PM2.5)
 ```
 
 You can edit a card in the dashboard and click `Show code editor` in the bottom left and paste it in
-![Pasted image 20240619145114.png](./DIY%20Air%20Quality%20Sensor/705340f9c761d66a3b84344e73c87a929af8d591.png "wikilink")
+<img src="./DIY%20Air%20Quality%20Sensor/705340f9c761d66a3b84344e73c87a929af8d591.png" alt="Code editor" width="450" style="display: block; margin: 0 auto;">
 
 # Conclusion
 
 I put it in a box and drilled some holes in it and mounted it on the side of my grandparent's shed. So far so good.
-![aqi-mounted.jpeg](./DIY%20Air%20Quality%20Sensor/d70efcaae35bdc734ebd3e80132b0f12e33d9bf4.jpeg "wikilink")
+<img src="./DIY%20Air%20Quality%20Sensor/d70efcaae35bdc734ebd3e80132b0f12e33d9bf4.jpeg" alt="Mounted sensor" width="450" style="display: block; margin: 0 auto;">
 
-<figure>
-<img
-src="./DIY%20Air%20Quality%20Sensor/b14a3db5d231b4eff348cfc32a428937370c8d7f.jpg"
-title="wikilink" alt="IMG_97162.jpg" />
-<figcaption aria-hidden="true">IMG_97162.jpg</figcaption>
-</figure>
+<img src="./DIY%20Air%20Quality%20Sensor/b14a3db5d231b4eff348cfc32a428937370c8d7f.jpg" alt="Final installation 1" width="450" style="display: block; margin: 0 auto;">
 
-<figure>
-<img
-src="./DIY%20Air%20Quality%20Sensor/5ea6442f47364011070f59117a6bce2884b1f149.jpg"
-title="wikilink" alt="IMG_9713.jpg" />
-<figcaption aria-hidden="true">IMG_9713.jpg</figcaption>
-</figure>
+<img src="./DIY%20Air%20Quality%20Sensor/5ea6442f47364011070f59117a6bce2884b1f149.jpg" alt="Final installation 2" width="450" style="display: block; margin: 0 auto;">
