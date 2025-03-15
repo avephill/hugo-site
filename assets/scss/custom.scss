@@ -277,9 +277,31 @@ a {
 
 // Publication authors and title spacing
 .article-metadata {
-  line-height: 1.1 !important;
+  line-height: 1.15 !important;
   margin: 0 !important;
   padding: 0 !important;
+
+  &.li-cite-author {
+    margin-bottom: 0 !important;
+    display: inline !important;
+  }
+}
+
+.pub-list-item {
+  line-height: 1.2 !important;
+
+  a {
+    display: inline !important;
+  }
+
+  p {
+    margin: 0.15rem 0 !important;
+  }
+}
+
+// Remove extra spacing around publication icons
+.pub-icon {
+  margin-right: 0.2rem !important;
 }
 
 // Make DOI and other links more compact
