@@ -42,3 +42,8 @@ This forces a paradigm shift which is both ongoing and difficult, and necessitat
 Here, I discuss the moral relevance and waning utility of the geographically-based and dichotomous understanding of “native” (or “in situ”) which is an important component of conservation ethics and practice.
 I then propose a new understanding of nativeness in which a species is native—not to a geographic location—but to a quantifiable set of biotic, climatic, geologic, and topographic conditions (i.e. its niche) that can then map to geographic space.
 Following this, I demonstrate the unique utility of this concept, which I will refer to as “econativeness,” in thinking through conservation problems—range expansions, range contractions, species introductions, and assisted migration—where the classical understanding of nativeness has become increasingly inadequate for assessing the moral value of species.
+
+## Publications
+
+- Avery P. Hill (2024). [Nativeness as Gradient: Towards a More Complete Value Assessment of Species in a Rapidly Changing World](https://doi.org/10.1007/s10806-024-09942-0). _Journal of Agricultural and Environmental Ethics_.
+- Avery P. Hill & Elizabeth A. Hadly (2018). [Rethinking "Native" in the Anthropocene](https://doi.org/10.3389/feart.2018.00096). _Frontiers in Earth Science_.

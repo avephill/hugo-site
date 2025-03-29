@@ -42,3 +42,8 @@ Our continued work now builds on these maps, and uses them as case studies to:
 1. Investigate fire behavior in these forests to inform fire risk and management
 2. Identify high-resolution indicator species of zombie forests through iNaturalist and community science campaigns
 3. Develop effective and ethical management options for the expected transition of zombie forests to chaparral or mixed hardwood forests.
+
+## Publications
+
+- Avery P. Hill, Connor J. Nolan, Kyle S. Hemes, Trevor W. Cambron, Christopher B. Field (2023). [Low-Elevation Conifers in California's Sierra Nevada Are out of Equilibrium with Climate](https://doi.org/10.1093/pnasnexus/pgad004). _PNAS Nexus_.
+- Avery P. Hill, Christopher B. Field (2021). [Forest Fires and Climate-Induced Tree Range Shifts in the Western US](https://doi.org/10.1038/s41467-021-26838-z). _Nature Communications_.
