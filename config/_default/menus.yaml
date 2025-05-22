@@ -5,34 +5,37 @@
 
 main:
   - name: Home
-    url: '#about'
+    url: "#about"
     weight: 10
   # - name: Posts
   #   url: '#posts'
   #   weight: 20
   - name: Projects
-    url: '#projects'
+    url: "#projects"
     weight: 30
+  - name: Web Apps
+    url: "#webapps"
+    weight: 35
   # - name: Talks
   #   url: '#talks'
   #   weight: 40
   - name: Publications
-    url: '#publication'
+    url: "#publication"
     weight: 50
   - name: Media
-    url: '#media'
+    url: "#media"
     weight: 55
   - name: Contact
-    url: '#contact'
+    url: "#contact"
     weight: 60
-# Link to a PDF of your resume/CV from the menu.
-# To enable, copy your resume/CV to `static/uploads/resume.pdf` and uncomment the lines below.
+  # Link to a PDF of your resume/CV from the menu.
+  # To enable, copy your resume/CV to `static/uploads/resume.pdf` and uncomment the lines below.
   # - name: DIY Projects
   #   url: 'diy'
   #   weight: 65
   - name: Resources
-    url: '/resource'
+    url: "/resource"
     weight: 65
   - name: CV
-    url: 'https://avephill.com/uploads/cv.pdf'
+    url: "https://avephill.com/uploads/cv.pdf"
     weight: 70
