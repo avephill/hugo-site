@@ -1,7 +1,7 @@
 ---
 # Leave the homepage title empty to use the site title
 title: ""
-date: 2022-10-24
+# date: 2022-10-24
 type: landing
 
 sections:
@@ -95,31 +95,6 @@ sections:
       # view: masonry
       # view: card
 
-  - block: portfolio
-    id: webapps
-    content:
-      title: Interactive Web Applications
-      text: Explore my collection of interactive tools for biodiversity research and data visualization
-      filters:
-        folders:
-          - webapp
-      # Default filter index (e.g. 0 corresponds to the first `filter_button` instance below).
-      default_button_index: 0
-      # Filter toolbar (optional).
-      buttons:
-        - name: Featured
-          tag: featured
-        - name: All
-          tag: "*"
-      sort_by: "custom_order"
-      sort_ascending: true
-    design:
-      # Choose how many columns the section has. Valid values: '1' or '2'.
-      columns: "2"
-      view: card
-      # For Showcase view, flip alternate rows?
-      flip_alt_rows: false
-
   - block: collection
     id: publication
     content:
@@ -156,6 +131,38 @@ sections:
       sort_by: "featured"
       # sort_by: 'date'
       count: 3
+
+  - block: portfolio
+    id: webapps
+    content:
+      title: Interactive Web Applications
+      # text: Explore my collection of interactive tools for biodiversity research and data visualization
+      filters:
+        folders:
+          - webapp
+      # Default filter index (e.g. 0 corresponds to the first `filter_button` instance below).
+      default_button_index: 0
+      # Filter toolbar (optional).
+      # Add or remove as many filters (`filter_button` instances) as you like.
+      # To show all items, set `tag` to "*".
+      # To filter by a specific tag, set `tag` to an existing tag name.
+      # To remove the toolbar, delete the entire `filter_button` block.
+      buttons:
+        - name: Featured
+          tag: featured
+        - name: All
+          tag: "*"
+      sort_by: "custom_order"
+      sort_ascending: true
+    design:
+      # Choose how many columns the section has. Valid values: '1' or '2'.
+      columns: "2"
+      view: masonry #showcase
+      # For Showcase view, flip alternate rows?
+      flip_alt_rows: false
+      # view: compact
+      # view: masonry
+      # view: card
 
   - block: markdown
     id: contact
