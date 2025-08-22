@@ -1,5 +1,5 @@
 ---
-title: Range Limits of All Species in iNaturalist
+title: Range Limits of Every Species in iNaturalist
 summary: A proof-of-concept, extending Brian Buma's "Edges of (All) Life" to a global scale and adding altitude.
 tags:
   - featured
