@@ -109,7 +109,7 @@ sections:
         # featured_only: true
         # exclude_featured: true
       sort_by: "featured"
-      count: 3
+      count: 4
     design:
       columns: "2"
       view: citation
