@@ -4,6 +4,7 @@
   color: #60734d;
 }
 
+
 // This changes section height for each section
 // .home-section {
 //   height: calc(100vh - 70px);
@@ -26,7 +27,8 @@
   // height: calc(100vh - 20px);
   bottom: 0;
   height: 100vh;
-  z-index: -999;
+  z-index: 0; // Set to 0 to be above background but not interfere with other sections
+  position: relative; // Add this to ensure proper stacking context
 }
 
 // For hero image at bottom
@@ -44,7 +46,8 @@
   position: fixed;
   // overflow: hidden;
 
-  z-index: -999;
+  z-index: -1; // Changed from -999 to -1 to stay behind content but not interfere
+  pointer-events: none; // Ensure background image doesn't interfere with clicks
 
   /* When the parent div width is larger than 1600px, use 100vw */
   @media screen and (min-width: 1600px) {
