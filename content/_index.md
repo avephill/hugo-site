@@ -32,13 +32,20 @@ sections:
       #   Leave `date_end` empty if it's your current employer.
       #   Begin multi-line descriptions with YAML's `|2-` multi-line prefix.
       items:
-        - title: PostDoctoral Researcher
+        - title: Research Scientist
+          company: California Academy of Sciences
+          company_url: ""
+          company_logo: calacademy-logo
+          location: San Francisco, CA
+          date_start: "2025-09-01"
+          date_end: ""
+        - title: Postdoctoral Researcher
           company: California Academy of Sciences
           company_url: ""
           company_logo: calacademy-logo
           location: San Francisco, CA
           date_start: "2022-09-29"
-          date_end: ""
+          date_end: "2025-09-01"
         - title: Ph.D. in Ecology and Evolution
           company: Stanford University
           company_url: ""

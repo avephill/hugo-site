@@ -17,7 +17,7 @@ last_name: Hill
 superuser: true
 
 # Role/position/tagline
-role: Postdoctoral Researcher
+role: Research Scientist
 
 # Organizations/Affiliations to show in About widget
 organizations:
@@ -121,5 +121,5 @@ social:
 highlight_name: true
 ---
 
-I’m a postdoctoral researcher in the Center for Biodiversity and Community Science at the California Academy of Sciences, where I leverage large amounts of species occurrence data to model ecological patterns across diverse landscapes. My research is most broadly motivated by the need to understand the biological and ethical drivers of Anthropocene biogeography. My practical areas of focus include urban ecosystems and climate-stressed montane forests in western North America.
+I’m a research scientist in the Center for Biodiversity and Community Science at the California Academy of Sciences, where I leverage large amounts of species occurrence data to model ecological patterns across diverse landscapes. My research is most broadly motivated by the need to understand the biological and ethical drivers of Anthropocene biogeography. My practical areas of focus include urban ecosystems and climate-stressed montane forests in western North America.
 {style="text-align: justify;"}
