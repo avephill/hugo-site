@@ -2,7 +2,7 @@
 date: "2024-04-27T00:00:00Z"
 focal_point: Smart
 title: Store custom maps on phone with QGIS and QField
-summary: A cheap, DIY air quality sensor with esphome and homeassistant
+summary: A pretty straightforward way to carry any GIS data on your phone, offline
 tags:
   - research
   - featured
