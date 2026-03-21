@@ -1,7 +1,9 @@
 // Change icons in about
 .big-icon {
-  font-size: 0.9rem;
+  font-size: 1.1rem;
   color: #60734d;
+  gap: 0.5rem;
+  letter-spacing: 0.15rem;
 }
 
 
@@ -17,9 +19,18 @@
 
 // change the text size of the about section
 .about-bio {
-  font-size: 0.8rem;
-  line-height: 1.6;
+  font-size: 0.95rem;
+  font-weight: 400;
+  line-height: 1.7;
   color: #3f403d;
+}
+
+#about .col-lg-8 {
+  padding-right: 3rem;
+}
+
+#about .article-style {
+  text-align: left;
 }
 
 // # This was helpful
@@ -58,7 +69,7 @@
 // Refined typography for the entire site
 body {
   font-family: "Source Sans Pro", sans-serif;
-  font-weight: 300;
+  font-weight: 400;
   font-size: 0.9rem;
   line-height: 1.6;
   color: #3f403d;
@@ -352,4 +363,33 @@ a {
 // Ensure proper spacing between buttons
 .btn-links .btn-page-header {
   margin-right: 0.2rem !important;
+}
+
+// Minimalist filter buttons (FEATURED / ALL toggles in portfolio/projects)
+.project-toolbar .btn-group .btn.btn-primary {
+  background: none !important;
+  border: none !important;
+  border-bottom: 1px solid transparent !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  color: #60734d !important;
+  font-family: "Source Sans Pro", sans-serif !important;
+  font-size: 0.7rem !important;
+  font-weight: 400 !important;
+  letter-spacing: 1.5px !important;
+  padding: 0.25rem 0.5rem !important;
+  text-transform: uppercase !important;
+  transition: all 0.15s ease !important;
+
+  &:hover {
+    color: #424530 !important;
+    border-bottom-color: #60734d !important;
+    background: none !important;
+  }
+
+  &.active {
+    background: none !important;
+    border-bottom: 1px solid #60734d !important;
+    color: #424530 !important;
+  }
 }
