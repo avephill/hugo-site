@@ -406,3 +406,27 @@ a {
     color: #424530 !important;
   }
 }
+
+// Experience timeline card balance
+.experience {
+  .card-body {
+    padding: 0.65rem 1rem;
+  }
+
+  .card-body img {
+    width: 40px !important;
+    height: 40px !important;
+  }
+
+  // Override align-content-start so logo sits centered next to text
+  .card-body .d-flex {
+    align-items: center !important;
+    align-content: center !important;
+  }
+
+  .mr-2.mb-2 {
+    margin-right: 0.75rem !important;
+    margin-bottom: 0 !important;
+    align-self: center !important;
+  }
+}
