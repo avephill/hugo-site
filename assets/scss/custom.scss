@@ -110,7 +110,7 @@ h6 {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
   transition: all 0.2s ease;
   margin-bottom: 1rem;
-  background-color: rgba(242, 243, 240, 0.8);
+  background-color: rgba(255, 255, 255, 0.25);
 }
 
 .card:hover {
@@ -132,6 +132,16 @@ h6 {
 .navbar {
   padding: 0.5rem 1rem;
   box-shadow: 0 1px 2px rgba(96, 115, 77, 0.05);
+}
+
+.navbar-brand {
+  text-decoration: none !important;
+
+  &:hover {
+    text-decoration: underline !important;
+    text-decoration-thickness: 1px !important;
+    text-underline-offset: 2px !important;
+  }
 }
 
 // Reduce spacing between items
@@ -186,15 +196,15 @@ ol {
 // Add subtle misty background effect to sections
 .home-section {
   position: relative;
-  padding: 30px 0;
+  padding: 60px 0;
 }
 
 .home-section-odd {
-  background-color: rgba(214, 216, 209, 0.6);
+  background-color: #D4CFC6;
 }
 
 .home-section-even {
-  background-color: rgba(242, 243, 240, 0.6);
+  background-color: #EDE9E3;
 }
 
 // Links styling to match the forest theme
@@ -213,17 +223,10 @@ a {
 
 // Elegant styling for showcase images
 .showcase-image {
-  border: 1px solid #f8f7f4 !important;
-  border-radius: 2px !important;
-  box-shadow: 0 4px 12px rgba(96, 115, 77, 0.1) !important;
-  padding: 6px !important;
-  background-color: #fcfcfa !important;
   transition: all 0.3s ease !important;
 
   &:hover {
-    box-shadow: 0 6px 18px rgba(96, 115, 77, 0.15) !important;
     transform: translateY(-3px) !important;
-    border-color: #f2f1ec !important;
   }
 }
 
