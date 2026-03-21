@@ -189,11 +189,6 @@ ol {
   padding: 30px 0;
 }
 
-// Last section on any page fills remaining viewport height — prevents background strip
-.page-body .home-section:last-child {
-  min-height: calc(100vh - 70px);
-}
-
 .home-section-odd {
   background-color: rgba(214, 216, 209, 0.6);
 }

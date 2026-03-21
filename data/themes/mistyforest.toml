@@ -19,4 +19,4 @@ name = "Misty Forest Minimalist"
   # Home sections
   home_section_odd = "#D6D8D1"  # A muted, misty green for depth
   home_section_even = "#F2F3F0"  # A very light, mist-inspired gray-white
-  background = "#F2F3F0"  # Body background matches lightest section
+  background = "#D6D8D1"  # Body background matches section color
