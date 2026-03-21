@@ -88,13 +88,9 @@ h6 {
   color: #424530;
 }
 
-// Refined footer
+// Hide footer — no meaningful content, Contact section is the intended page end
 .page-footer {
-  z-index: 10;
-  padding: 1rem 0;
-  font-size: 0.8rem;
-  color: #60734d;
-  background-color: #f2f3f0;
+  display: none;
 }
 
 .wg-about-biography {
