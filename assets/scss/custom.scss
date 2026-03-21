@@ -128,6 +128,20 @@ h6 {
   color: #424530;
 }
 
+// Narrow section heading column and add right breathing room to content
+// Excludes the about/hero section. col-12 on mobile stays full-width (stacked).
+@media (min-width: 992px) {
+  .home-section:not(.wg-about-biography) .section-heading.col-lg-4 {
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
+  .home-section:not(.wg-about-biography) .row > .col-12.col-lg-8 {
+    flex: 0 0 72%;
+    max-width: 72%;
+    padding-right: 3rem;
+  }
+}
+
 // Make navigation more compact
 .navbar {
   padding: 0.5rem 1rem;
