@@ -88,7 +88,7 @@ h6 {
   color: #424530;
 }
 
-// Hide footer — no meaningful content, Contact section is the intended page end
+// Hide footer and prevent page-body from expanding to fill viewport
 .page-footer {
   display: none;
 }
@@ -187,6 +187,11 @@ ol {
 .home-section {
   position: relative;
   padding: 30px 0;
+}
+
+// Last section on any page fills remaining viewport height — prevents background strip
+.page-body .home-section:last-child {
+  min-height: calc(100vh - 70px);
 }
 
 .home-section-odd {
