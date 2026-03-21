@@ -142,7 +142,7 @@ sections:
   - block: portfolio
     id: webapps
     content:
-      title: Interactive Web Applications
+      title: Web Applications
       # text: Explore my collection of interactive tools for biodiversity research and data visualization
       filters:
         folders:

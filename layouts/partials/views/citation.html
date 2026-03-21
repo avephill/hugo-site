@@ -1,0 +1,55 @@
+{{ $item := .item }}
+{{ $has_attachments := partial "functions/has_attachments" $item }}
+
+{{/* Resolve the best external link: DOI > url_pdf > internal page */}}
+{{ $external_url := "" }}
+{{ with $item.Params.doi }}
+  {{ $external_url = printf "https://doi.org/%s" . }}
+{{ else }}
+  {{ with $item.Params.url_pdf }}
+    {{ $external_url = . }}
+  {{ end }}
+{{ end }}
+{{ $title_href := cond (ne $external_url "") $external_url $item.RelPermalink }}
+{{ $target_attr := cond (ne $external_url "") " target=\"_blank\" rel=\"noopener\"" "" }}
+
+<div class="pub-list-item view-citation" style="margin-bottom: 1rem">
+  <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
+
+  {{/* APA Style */}}
+  {{ if eq (site.Params.publications.citation_style | default "apa") "apa" }}
+
+  <span class="article-metadata li-cite-author">
+    {{ partial "page_metadata_authors" $item }}
+  </span>
+  ({{- $item.Date.Format "2006" -}}).
+  <a href="{{ $title_href }}" {{ $target_attr | safeHTMLAttr }}>{{ $item.Title }}</a>.
+  {{ if $item.Params.publication_short }}
+    {{- $item.Params.publication_short | markdownify -}}.
+  {{ else if $item.Params.publication }}
+    {{- $item.Params.publication | markdownify -}}.
+  {{ end }}
+  <p>{{ partial "page_links" (dict "page" $item "is_list" 1) }}</p>
+
+  {{/* MLA Style */}}
+  {{ else }}
+
+  <span class="article-metadata li-cite-author">
+    {{ partial "page_metadata_authors" $item }}.
+  </span>
+  <a href="{{ $title_href }}" {{ $target_attr | safeHTMLAttr }}>{{ $item.Title }}</a>.
+  {{ if $item.Params.publication_short }}
+    {{- $item.Params.publication_short | markdownify -}},
+  {{ else if $item.Params.publication }}
+    {{- $item.Params.publication | markdownify -}},
+  {{ end }}
+  {{- $item.Date.Format "2006" -}}.
+
+  {{ if $has_attachments }}
+  <div class="btn-links">
+    {{ partial "page_links" (dict "page" $item "is_list" 1) }}
+  </div>
+  {{ end }}
+
+  {{ end }}
+</div>

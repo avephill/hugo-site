@@ -1,5 +1,5 @@
 ---
-title: Interactive Web Applications
+title: Web Applications
 
 # Listing view
 view: card
