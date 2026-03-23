@@ -1,13 +1,20 @@
 {{ $item := .item }}
 {{ $has_attachments := partial "functions/has_attachments" $item }}
 
-{{/* Resolve the best external link: DOI > url_pdf > internal page */}}
+{{/* Resolve the best external link: DOI > links[].url > url_pdf > internal page */}}
 {{ $external_url := "" }}
 {{ with $item.Params.doi }}
   {{ $external_url = printf "https://doi.org/%s" . }}
 {{ else }}
-  {{ with $item.Params.url_pdf }}
-    {{ $external_url = . }}
+  {{ range first 1 $item.Params.links }}
+    {{ with .url }}
+      {{ $external_url = . }}
+    {{ end }}
+  {{ end }}
+  {{ if eq $external_url "" }}
+    {{ with $item.Params.url_pdf }}
+      {{ $external_url = . }}
+    {{ end }}
   {{ end }}
 {{ end }}
 {{ $title_href := cond (ne $external_url "") $external_url $item.RelPermalink }}
