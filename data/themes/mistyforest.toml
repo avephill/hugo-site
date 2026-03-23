@@ -19,4 +19,4 @@ name = "Misty Forest Minimalist"
   # Home sections
   home_section_odd = "#D4CFC6"  # Warm gray-sand
   home_section_even = "#EDE9E3"  # Light warm sand
-  background = "#EDE9E3"  # Body background matches even section (lighter for standalone pages)
+  background = "#D4CFC6"  # Body background matches odd section (prevents strip below short pages)

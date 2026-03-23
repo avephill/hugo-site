@@ -7,10 +7,12 @@
   {{ $link = printf "https://doi.org/%s" . }}
   {{ $target = "target=\"_blank\" rel=\"noopener\"" }}
 {{ else }}
-  {{ range first 1 $item.Params.links }}
-    {{ with .url }}
-      {{ $link = . }}
-      {{ $target = "target=\"_blank\" rel=\"noopener\"" }}
+  {{ if $item.Params.links }}
+    {{ range first 1 $item.Params.links }}
+      {{ with .url }}
+        {{ $link = . }}
+        {{ $target = "target=\"_blank\" rel=\"noopener\"" }}
+      {{ end }}
     {{ end }}
   {{ end }}
   {{ if eq $link $item.RelPermalink }}

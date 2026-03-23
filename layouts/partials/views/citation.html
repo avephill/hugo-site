@@ -6,9 +6,11 @@
 {{ with $item.Params.doi }}
   {{ $external_url = printf "https://doi.org/%s" . }}
 {{ else }}
-  {{ range first 1 $item.Params.links }}
-    {{ with .url }}
-      {{ $external_url = . }}
+  {{ if $item.Params.links }}
+    {{ range first 1 $item.Params.links }}
+      {{ with .url }}
+        {{ $external_url = . }}
+      {{ end }}
     {{ end }}
   {{ end }}
   {{ if eq $external_url "" }}

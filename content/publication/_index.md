@@ -1,6 +1,8 @@
 ---
 title: Publications
 cms_exclude: true
+design:
+  css_class: pub-list
 
 # After installing pipx
 # pipx install academic

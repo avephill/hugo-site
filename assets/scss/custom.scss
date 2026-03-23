@@ -66,6 +66,23 @@
   }
 }
 
+// Match html and page-body background to body so no strip shows below short pages
+html,
+.page-body {
+  background-color: #D4CFC6;
+}
+
+// Publication list page gets the lighter even-section background
+body.pub-list,
+body.pub-list .page-body {
+  background-color: #EDE9E3;
+}
+
+// Hide footer
+.page-footer {
+  display: none;
+}
+
 // Refined typography for the entire site
 body {
   font-family: "Source Sans Pro", sans-serif;
@@ -213,11 +230,17 @@ ol {
   padding: 60px 0;
 }
 
+
 .home-section-odd {
   background-color: #D4CFC6;
 }
 
 .home-section-even {
+  background-color: #EDE9E3;
+}
+
+// List pages like /publication/ get a lighter background via css_class in front matter
+body.pub-list {
   background-color: #EDE9E3;
 }
 
