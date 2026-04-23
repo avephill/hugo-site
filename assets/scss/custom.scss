@@ -467,6 +467,8 @@ body:not(.dark) {
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
+    overflow-x: auto;
+    overflow-y: hidden;
   }
 
   pre.chroma,
@@ -474,7 +476,8 @@ body:not(.dark) {
     background-color: $code-block-bg !important;
     color: #3f403d;
     border-radius: $code-block-radius;
-    overflow: hidden;
+    overflow-x: auto;
+    overflow-y: hidden;
   }
 
   pre.chroma code {
@@ -603,6 +606,8 @@ body.dark {
       0 1px 1px rgba(0, 0, 0, 0.2);
     padding: 0.8rem 0.95rem;
     line-height: 1.5;
+    overflow-x: auto;
+    overflow-y: hidden;
   }
 
   pre.chroma,
@@ -610,7 +615,8 @@ body.dark {
     background-color: #2f313a !important;
     color: #e6e2db;
     border-radius: $code-block-radius;
-    overflow: hidden;
+    overflow-x: auto;
+    overflow-y: hidden;
   }
 
   .btn-copy-code {
