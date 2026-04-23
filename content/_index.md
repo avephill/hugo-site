@@ -70,6 +70,29 @@ sections:
     design:
       columns: "2"
 
+  - block: markdown
+    id: vision
+    content:
+      title: Research Program
+      text: |-
+        <figure style="float: right; max-width: 400px; margin: 0 0 1rem 2rem;">
+        <img src="/media/community-science-lifecycle.png" alt="Conceptual life cycle of community science data" class="img-fluid" style="border:1px solid #a8957e;border-radius:2px;box-shadow:0 4px 10px rgba(96,115,77,.1);padding:6px;background-color:#fcfcfa">
+        <figcaption class="small text-muted mt-1"><em>Fig. 1. A conceptual life cycle of community science data applied to changing ecosystems.</em></figcaption>
+        </figure>
+
+        ##### Where and how are vegetation-type transitions occurring?
+        Using historical vegetation maps, forest inventory data, and remote sensing to characterize climate-induced range shifts in western forests (Fig. 1, line 1).
+
+        ##### What are the impacts of these transitions?
+        Investigating consequences for fire regimes, carbon storage, biodiversity, and the human communities embedded in these landscapes (Fig. 1, lines 2–3).
+
+        ##### How do we manage these transitions ethically and effectively?
+        Developing ethical frameworks, community science platforms, and co-created management strategies that strengthen the reciprocal relationships connecting scientists, decision-makers, and local communities (Fig. 1, lines 4–9).
+
+        <div style="clear: both;"></div>
+    design:
+      columns: '2'
+
   - block: portfolio
     # - block: collection
     id: projects

@@ -1,8 +1,8 @@
 ---
 title: Connecting Urban Biodiversity
 summary: Project evaluating the contribution of urban lands to SF Bay Area conservation goals with iNaturalist.
-tags:
-  - featured
+# tags:
+  # - featured
 date: '2022-09-27T00:00:00Z'
 
 custom_order: 3

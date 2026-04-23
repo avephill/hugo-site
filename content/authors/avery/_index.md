@@ -121,5 +121,5 @@ social:
 highlight_name: true
 ---
 
-I’m a research scientist in the Center for Biodiversity and Community Science at the California Academy of Sciences, where I leverage large amounts of species occurrence data to model ecological patterns across diverse landscapes. My research is most broadly motivated by the need to understand the biological and ethical drivers of Anthropocene biogeography. My practical areas of focus include urban ecosystems and climate-stressed montane forests in western North America.
+My research centers on vegetation transitions driven by climate change, especially in California's montane forests. I map where these shifts are occurring, investigate their ecological and social consequences, and develop ethical frameworks for managing them. Related strands of my work extend into urban ecology and into building tools that make large biodiversity datasets legible to community scientists and decision-makers.
 {style="text-align: justify;"}
