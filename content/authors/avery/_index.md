@@ -121,5 +121,5 @@ social:
 highlight_name: true
 ---
 
-My research centers on vegetation transitions driven by climate change, especially in California's montane forests. I map where these shifts are occurring, investigate their ecological and social consequences, and develop ethical frameworks for managing them. Related strands of my work extend into urban ecology and into building tools that make large biodiversity datasets legible to community scientists and decision-makers.
+I'm a global change ecologist at the California Academy of Sciences. My research focuses on climate-driven vegetation transitions in western North America, spanning both montane forests and urban systems. I draw on natural history, large-scale geospatial modeling, community science, and environmental ethics, and I work to make ecological science legible to the communities and decision-makers who need it.
 {style="text-align: justify;"}

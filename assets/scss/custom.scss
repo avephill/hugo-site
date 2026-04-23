@@ -432,6 +432,256 @@ a {
   }
 }
 
+// ---------------------------------------------------------------------------
+// Code blocks & syntax highlighting
+// Chroma CSS loads after the main bundle; use higher specificity than .chroma .*
+// ---------------------------------------------------------------------------
+$code-block-bg: #e4dfd6;
+$code-block-border: rgba(66, 69, 48, 0.1);
+$code-block-radius: 10px;
+$code-string: #7a5c48;
+$code-keyword: #424530;
+$code-type: #4a5c68;
+$code-number: #4a6f66;
+$code-comment: #8a8580;
+
+body:not(.dark) {
+  // Inline code (Bootstrap default is very saturated)
+  code:not(pre code) {
+    color: #4d5c44;
+    background-color: rgba(96, 115, 77, 0.12);
+    padding: 0.12em 0.35em;
+    border-radius: 3px;
+    font-size: 0.88em;
+  }
+
+  pre,
+  div.highlight pre {
+    background-color: $code-block-bg;
+    border: 1px solid rgba(66, 69, 48, 0.08);
+    border-radius: $code-block-radius;
+    box-shadow:
+      inset 0 1px 0 rgba(255, 255, 255, 0.28),
+      0 1px 1px rgba(66, 69, 48, 0.03);
+    padding: 0.8rem 0.95rem;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  pre.chroma,
+  .chroma {
+    background-color: $code-block-bg !important;
+    color: #3f403d;
+    border-radius: $code-block-radius;
+    overflow: hidden;
+  }
+
+  pre.chroma code {
+    color: inherit;
+  }
+
+  pre.chroma .line {
+    min-height: 1.35em;
+  }
+
+  .btn-copy-code {
+    top: 0.45rem;
+    right: 0.5rem;
+    border-radius: 999px;
+    border: 1px solid rgba(66, 69, 48, 0.14);
+    background: rgba(228, 223, 214, 0.88);
+    color: #6a6d5c;
+    font-size: 0.62rem;
+    letter-spacing: 0.08em;
+    line-height: 1;
+    padding: 0.22rem 0.5rem;
+    text-transform: uppercase;
+    font-weight: 500;
+  }
+
+  pre.chroma .k,
+  pre.chroma .kc,
+  pre.chroma .kd,
+  pre.chroma .kn,
+  pre.chroma .kp,
+  pre.chroma .kr,
+  pre.chroma .o,
+  pre.chroma .ow {
+    color: $code-keyword;
+    font-weight: 600;
+  }
+
+  pre.chroma .kt,
+  pre.chroma .nc {
+    color: $code-type;
+    font-weight: 600;
+  }
+
+  pre.chroma .na,
+  pre.chroma .nb,
+  pre.chroma .no,
+  pre.chroma .nv,
+  pre.chroma .vc,
+  pre.chroma .vg,
+  pre.chroma .vi {
+    color: #4f6560;
+  }
+
+  pre.chroma .nt {
+    color: #3d4f5c;
+  }
+
+  pre.chroma .nf,
+  pre.chroma .ne,
+  pre.chroma .nl {
+    color: #6b5246;
+    font-weight: 600;
+  }
+
+  pre.chroma .s,
+  pre.chroma .sa,
+  pre.chroma .sb,
+  pre.chroma .sc,
+  pre.chroma .dl,
+  pre.chroma .sd,
+  pre.chroma .s2,
+  pre.chroma .se,
+  pre.chroma .sh,
+  pre.chroma .si,
+  pre.chroma .sx,
+  pre.chroma .s1 {
+    color: $code-string;
+  }
+
+  pre.chroma .sr {
+    color: #4a6f55;
+  }
+
+  pre.chroma .ss {
+    color: #6b4a62;
+  }
+
+  pre.chroma .m,
+  pre.chroma .mb,
+  pre.chroma .mf,
+  pre.chroma .mh,
+  pre.chroma .mi,
+  pre.chroma .il,
+  pre.chroma .mo {
+    color: $code-number;
+  }
+
+  pre.chroma .c,
+  pre.chroma .ch,
+  pre.chroma .cm,
+  pre.chroma .c1,
+  pre.chroma .cs,
+  pre.chroma .cp,
+  pre.chroma .cpf {
+    color: $code-comment;
+  }
+
+  pre.chroma .lnt,
+  pre.chroma .ln {
+    color: #9a948c;
+  }
+
+  pre.chroma .hl {
+    background-color: rgba(96, 115, 77, 0.15);
+  }
+}
+
+// Dark theme: slightly lower contrast than stock Dracula
+body.dark {
+  pre,
+  div.highlight pre {
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    border-radius: $code-block-radius;
+    box-shadow:
+      inset 0 1px 0 rgba(255, 255, 255, 0.05),
+      0 1px 1px rgba(0, 0, 0, 0.2);
+    padding: 0.8rem 0.95rem;
+    line-height: 1.5;
+  }
+
+  pre.chroma,
+  .chroma {
+    background-color: #2f313a !important;
+    color: #e6e2db;
+    border-radius: $code-block-radius;
+    overflow: hidden;
+  }
+
+  .btn-copy-code {
+    border-radius: 999px;
+    border: 1px solid rgba(255, 255, 255, 0.16);
+    background: rgba(47, 49, 58, 0.88);
+    color: #c7c3bc;
+  }
+
+  pre.chroma .k,
+  pre.chroma .kc,
+  pre.chroma .kn,
+  pre.chroma .kp,
+  pre.chroma .kr,
+  pre.chroma .nt,
+  pre.chroma .o,
+  pre.chroma .ow {
+    color: #d8a0be;
+  }
+
+  pre.chroma .kd,
+  pre.chroma .kt,
+  pre.chroma .nb,
+  pre.chroma .nl,
+  pre.chroma .nv,
+  pre.chroma .vc,
+  pre.chroma .vg,
+  pre.chroma .vi {
+    color: #9ec9d4;
+  }
+
+  pre.chroma .s,
+  pre.chroma .sa,
+  pre.chroma .sb,
+  pre.chroma .sc,
+  pre.chroma .dl,
+  pre.chroma .sd,
+  pre.chroma .s2,
+  pre.chroma .se,
+  pre.chroma .sh,
+  pre.chroma .si,
+  pre.chroma .sx,
+  pre.chroma .s1,
+  pre.chroma .sr {
+    color: #c9c08f;
+  }
+
+  pre.chroma .nf,
+  pre.chroma .na,
+  pre.chroma .nc {
+    color: #a3c9a8;
+  }
+
+  pre.chroma .m,
+  pre.chroma .mb,
+  pre.chroma .mf,
+  pre.chroma .mh,
+  pre.chroma .mi,
+  pre.chroma .il,
+  pre.chroma .mo {
+    color: #b8a8d4;
+  }
+
+  pre.chroma .c,
+  pre.chroma .ch,
+  pre.chroma .cm,
+  pre.chroma .c1 {
+    color: #8d91a5;
+  }
+}
+
 // Experience timeline card balance
 .experience {
   .card-body {
