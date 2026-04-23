@@ -7,7 +7,7 @@ tags:
   - Community Science
 date: "2026-04-22"
 show_related: false
-custom_order: 2
+custom_order: 4
 image:
 focal_point: Smart
 url_code: ""

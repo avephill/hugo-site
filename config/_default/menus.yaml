@@ -2,6 +2,7 @@
 #   To link a homepage widget, specify the URL as a hash `#` followed by the filename of the
 #     desired widget in your `content/home/` folder.
 #   The weight parameter defines the order that the links will appear in.
+#   Order matches section order in content/_index.md (landing page blocks).
 
 main:
   - name: Home
@@ -10,32 +11,32 @@ main:
   - name: Research
     url: "#vision"
     weight: 20
-  - name: Projects
-    url: "#projects"
-    weight: 30
-  # - name: Talks
-  #   url: '#talks'
-  #   weight: 40
   - name: Publications
     url: "#publication"
-    weight: 50
+    weight: 30
+  - name: Projects
+    url: "#projects"
+    weight: 40
   - name: Media
     url: "#media"
-    weight: 55
+    weight: 50
   - name: Web Apps
     url: "#webapps"
-    weight: 60
+    weight: 55
   - name: Contact
     url: "#contact"
-    weight: 65
-  # Link to a PDF of your resume/CV from the menu.
-  # To enable, copy your resume/CV to `static/uploads/resume.pdf` and uncomment the lines below.
-  # - name: DIY Projects
-  #   url: 'diy'
-  #   weight: 65
+    weight: 60
   - name: Resources
     url: "/resource"
     weight: 65
   - name: CV
     url: "https://avephill.com/uploads/cv.pdf"
     weight: 70
+  # - name: Talks
+  #   url: '#talks'
+  #   weight: 40
+  # Link to a PDF of your resume/CV from the menu.
+  # To enable, copy your resume/CV to `static/uploads/resume.pdf` and uncomment the lines below.
+  # - name: DIY Projects
+  #   url: 'diy'
+  #   weight: 65

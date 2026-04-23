@@ -121,5 +121,5 @@ social:
 highlight_name: true
 ---
 
-I'm a global change ecologist at the California Academy of Sciences. My research focuses on climate-driven vegetation transitions in western North America, spanning both montane forests and urban systems. I draw on natural history, large-scale geospatial modeling, community science, and environmental ethics, and I work to make ecological science legible to the communities and decision-makers who need it.
+I'm a global change ecologist at the California Academy of Sciences. My research focuses on anthropogenic vegetation transitions in western North America, spanning both montane forests and urban systems. I draw on natural history, large-scale geospatial modeling, community science, and environmental ethics, and I work to make ecological science legible to the communities who affect and are affected by changing ecosystems.
 {style="text-align: justify;"}
