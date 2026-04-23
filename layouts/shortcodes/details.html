@@ -1,0 +1,5 @@
+{{- $text := .Get "text" | default "Show/hide" -}}
+<details>
+  <summary>{{ $text }} <small style="opacity:0.6;">(click to expand)</small></summary>
+  <div>{{ .Inner | markdownify }}</div>
+</details>
