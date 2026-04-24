@@ -30,7 +30,7 @@ main:
     url: "/resource"
     weight: 65
   - name: CV
-    url: "https://avephill.com/uploads/cv.pdf"
+    url: "/uploads/cv.pdf"
     weight: 70
   # - name: Talks
   #   url: '#talks'
