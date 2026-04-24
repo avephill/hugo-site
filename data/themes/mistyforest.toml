@@ -2,21 +2,21 @@
 name = "Misty Forest Minimalist"
 
 [light]
-  # Primary
-  primary = "#60734D"  # A soft, natural green inspired by the trees
+  # Primary — deeper forest green for buttons/active states
+  primary = "#3d5c47"
 
   # Menu
-  menu_primary = "#E2DDD8"  # Warm gray-sand for navbar
-  menu_text = "#4B4A48"  # A muted charcoal gray for text, elegant and subdued
-  menu_text_active = "#3F403D"  # A darker gray for an active state
-  menu_title = "#4B4A48"  # Same as menu text for consistency
+  menu_primary = "#e8e2d8"     # warm linen navbar
+  menu_text = "#4a4540"        # warm charcoal
+  menu_text_active = "#1f3327" # deep forest for active
+  menu_title = "#4a4540"
 
-  # Links
-  link = "#60734D"  # Same as primary for cohesive design
-  link_hover = "#4B4A48"  # Darker for subtle change on hover
-  link_decoration = "underline"
+  # Links — ochre/terracotta
+  link = "#a06830"
+  link_hover = "#7a4e22"
+  link_decoration = "none"
 
-  # Home sections
-  home_section_odd = "#D4CFC6"  # Warm gray-sand
-  home_section_even = "#EDE9E3"  # Light warm sand
-  background = "#D4CFC6"  # Body background matches odd section (prevents strip below short pages)
+  # Home sections — warmer paper tones
+  home_section_odd = "#e8e2d8"   # warm taupe-paper
+  home_section_even = "#f0ebe0"  # lighter warm off-white
+  background = "#e8e2d8"

@@ -3,28 +3,17 @@
 // Change icons in about
 .big-icon {
   font-size: 1.1rem;
-  color: #60734d;
+  color: #3d5c47;
   gap: 0.5rem;
   letter-spacing: 0.15rem;
 }
-
-
-// This changes section height for each section
-// .home-section {
-//   height: calc(100vh - 70px);
-// }
-
-// .wg-about-biography {
-//   // height: calc(100vh - 70px);
-//   // font-size: .82rem;
-// }
 
 // change the text size of the about section
 .about-bio {
   font-size: 0.9rem;
   font-weight: 300;
   line-height: 1.7;
-  color: #3f403d;
+  color: #2e2a25;
 }
 
 #about .col-lg-8 {
@@ -35,34 +24,23 @@
   text-align: left !important;
 }
 
-// # This was helpful
 #about {
-  // height: calc(100vh - 20px);
   bottom: 0;
   height: 100vh;
-  z-index: 0; // Set to 0 to be above background but not interfere with other sections
-  position: relative; // Add this to ensure proper stacking context
+  z-index: 0;
+  position: relative;
 }
 
 // For hero image at bottom
 .img-div-bg {
-  // height: 10vh;
   bottom: 0px;
-  // top: 0;
   left: 0px;
-  // This was critical for overflow
   width: 1600px;
-  // min-width:100%;
   height: 100vh;
-  // position: absolute;
-
   position: fixed;
-  // overflow: hidden;
+  z-index: -1;
+  pointer-events: none;
 
-  z-index: -1; // Changed from -999 to -1 to stay behind content but not interfere
-  pointer-events: none; // Ensure background image doesn't interfere with clicks
-
-  /* When the parent div width is larger than 1600px, use 100vw */
   @media screen and (min-width: 1600px) {
     width: 100vw;
   }
@@ -71,13 +49,13 @@
 // Match html and page-body background to body so no strip shows below short pages
 html,
 .page-body {
-  background-color: #D4CFC6;
+  background-color: #e8e2d8;
 }
 
 // Publication list page gets the lighter even-section background
 body.pub-list,
 body.pub-list .page-body {
-  background-color: #EDE9E3;
+  background-color: #f0ebe0;
 }
 
 // Hide footer
@@ -90,8 +68,8 @@ body {
   font-family: "Source Sans Pro", sans-serif;
   font-weight: 400;
   font-size: 0.9rem;
-  line-height: 1.6;
-  color: #3f403d;
+  line-height: 1.65;
+  color: #2e2a25;
   letter-spacing: 0.01em;
 }
 
@@ -104,15 +82,11 @@ h6 {
   font-family: "EB Garamond", serif;
   font-weight: 500;
   letter-spacing: 0.02em;
-  color: #424530;
+  color: #1f3327;
 }
 
-// Hide footer and prevent page-body from expanding to fill viewport
-.page-footer {
-  display: none;
-}
-
-.wg-about-biography {
+#about {
+  // height: calc(100vh - 20px);
   bottom: 0px;
 }
 
@@ -120,35 +94,50 @@ h6 {
 .media.stream-item .article-title,
 .card-simple .article-title {
   font-size: 1rem;
-  color: #424530;
+  color: #1f3327;
 }
 
-/* Refined card styling */
+// Cards
 .card {
-  border: none;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(47, 74, 58, 0.12);
+  box-shadow: none;
   transition: all 0.2s ease;
   margin-bottom: 1rem;
   background-color: rgba(255, 255, 255, 0.25);
+  border-radius: 4px;
 }
 
 .card:hover {
-  box-shadow: 0 2px 5px rgba(96, 115, 77, 0.1);
+  box-shadow: 0 10px 30px rgba(42, 38, 34, 0.08);
+  border-color: rgba(61, 92, 71, 0.3);
   transform: translateY(-2px);
 }
 
-// For stick section headings
+.card-title {
+  color: #1f3327;
+}
+
+// Section headings — sticky + ochre underline accent
 .section-heading h1 {
   margin: 0 0 8px 0;
   position: sticky;
   position: -webkit-sticky;
   top: 85px;
   font-size: 1.5rem;
-  color: #424530;
+  color: #1f3327;
+
+  &::after {
+    content: '';
+    display: block;
+    width: 2.5rem;
+    height: 2px;
+    background: #a06830;
+    margin-top: 0.5rem;
+    border-radius: 1px;
+  }
 }
 
 // Narrow section heading column and add right breathing room to content
-// Excludes the about/hero section. col-12 on mobile stays full-width (stacked).
 @media (min-width: 992px) {
   .home-section:not(.wg-about-biography) .section-heading.col-lg-4 {
     flex: 0 0 25%;
@@ -164,7 +153,7 @@ h6 {
 // Make navigation more compact
 .navbar {
   padding: 0.5rem 1rem;
-  box-shadow: 0 1px 2px rgba(96, 115, 77, 0.05);
+  box-shadow: 0 1px 2px rgba(31, 51, 39, 0.06);
 }
 
 .navbar-brand {
@@ -180,10 +169,10 @@ h6 {
 // Reduce spacing between items
 .article-style {
   margin-top: 1rem;
-  line-height: 1.6;
+  line-height: 1.65;
 }
 
-// Ultra-minimalist button styling that matches the misty forest theme
+// Minimalist button styling
 .btn {
   border-radius: 0;
   padding: 0.4rem 1rem;
@@ -197,21 +186,21 @@ h6 {
 }
 
 .btn-primary {
-  color: #60734d;
+  color: #3d5c47;
   border-bottom: 1px solid transparent;
   box-shadow: none;
 
   &:hover,
   &:focus {
     background: none;
-    color: #424530;
-    border-bottom: 1px solid #60734d;
+    color: #1f3327;
+    border-bottom: 1px solid #a06830;
   }
 
   &.active {
     background: none;
-    color: #424530;
-    border-bottom: 1px solid #60734d;
+    color: #1f3327;
+    border-bottom: 1px solid #a06830;
   }
 }
 
@@ -226,34 +215,33 @@ ol {
   margin-bottom: 0.8rem;
 }
 
-// Add subtle misty background effect to sections
+// Home section base
 .home-section {
   position: relative;
   padding: 60px 0;
 }
 
-
 .home-section-odd {
-  background-color: #D4CFC6;
+  background-color: #e8e2d8;
 }
 
 .home-section-even {
-  background-color: #EDE9E3;
+  background-color: #f0ebe0;
 }
 
-// List pages like /publication/ get a lighter background via css_class in front matter
+// List pages
 body.pub-list {
-  background-color: #EDE9E3;
+  background-color: #f0ebe0;
 }
 
-// Links styling to match the forest theme
+// Links — ochre with forest hover
 a {
-  color: #60734d;
+  color: #a06830;
   text-decoration: none;
   transition: all 0.15s ease;
 
   &:hover {
-    color: #424530;
+    color: #7a4e22;
     text-decoration: underline;
     text-decoration-thickness: 1px;
     text-underline-offset: 2px;
@@ -308,7 +296,7 @@ a {
     opacity: 0.7 !important;
     border: none !important;
     background: none !important;
-    color: #60734d !important;
+    color: #a06830 !important;
     font-family: "Source Sans Pro", sans-serif !important;
 
     &:not(:last-child):after {
@@ -373,7 +361,7 @@ a {
   font-weight: 300 !important;
   border: none !important;
   background: none !important;
-  color: #60734d !important;
+  color: #a06830 !important;
   opacity: 0.7;
   font-family: "Source Sans Pro", sans-serif !important;
 
@@ -387,69 +375,114 @@ a {
     transform: none !important;
     text-decoration: underline !important;
     text-underline-offset: 2px !important;
-    color: #424530 !important;
+    color: #7a4e22 !important;
   }
 }
 
-// Remove any conflicting styles from parent classes
 .btn-outline-primary.btn-page-header {
   border: none !important;
   background: none !important;
   box-shadow: none !important;
 }
 
-// Ensure proper spacing between buttons
 .btn-links .btn-page-header {
   margin-right: 0.2rem !important;
 }
 
-// Minimalist filter buttons (FEATURED / ALL toggles in portfolio/projects)
+// Pill filter buttons (FEATURED / ALL toggles)
 .project-toolbar .btn-group .btn.btn-primary {
-  background: none !important;
-  border: none !important;
-  border-bottom: 1px solid transparent !important;
-  border-radius: 0 !important;
+  background: transparent !important;
+  border: 1px solid rgba(61, 92, 71, 0.25) !important;
+  border-radius: 999px !important;
   box-shadow: none !important;
-  color: #60734d !important;
+  color: #4a4540 !important;
   font-family: "Source Sans Pro", sans-serif !important;
-  font-size: 0.7rem !important;
+  font-size: 0.72rem !important;
   font-weight: 400 !important;
-  letter-spacing: 1.5px !important;
-  padding: 0.25rem 0.5rem !important;
+  letter-spacing: 1.2px !important;
+  padding: 0.25rem 0.9rem !important;
   text-transform: uppercase !important;
   transition: all 0.15s ease !important;
+  margin-right: 0.4rem !important;
 
   &:hover {
-    color: #424530 !important;
-    border-bottom-color: #60734d !important;
+    color: #1f3327 !important;
+    border-color: rgba(61, 92, 71, 0.5) !important;
     background: none !important;
   }
 
   &.active {
-    background: none !important;
-    border-bottom: 1px solid #60734d !important;
-    color: #424530 !important;
+    background: #3d5c47 !important;
+    border-color: #3d5c47 !important;
+    color: #f0ebe0 !important;
+  }
+}
+
+// Experience card sizing
+.experience {
+  .card-body {
+    padding: 0.65rem 1rem;
+  }
+
+  .card-body img {
+    width: 40px !important;
+    height: 40px !important;
+  }
+
+  .card-body .d-flex {
+    align-items: center !important;
+    align-content: center !important;
+  }
+
+  .mr-2.mb-2 {
+    margin-right: 0.75rem !important;
+    margin-bottom: 0 !important;
+    align-self: center !important;
+  }
+}
+
+// ---------------------------------------------------------------------------
+// Contact section — inverted dark forest palette
+// ---------------------------------------------------------------------------
+.home-section#contact {
+  background-color: #1f3327 !important;
+  color: #f0ebe0;
+
+  h1, h2, h3, p, a {
+    color: #f0ebe0;
+  }
+
+  a:hover {
+    color: #c88a4a;
+    text-decoration: underline;
+  }
+
+  .section-heading h1 {
+    color: #f0ebe0;
+
+    &::after {
+      background: #c88a4a;
+    }
   }
 }
 
 // ---------------------------------------------------------------------------
 // Code blocks & syntax highlighting
-// Chroma CSS loads after the main bundle; use higher specificity than .chroma .*
 // ---------------------------------------------------------------------------
-$code-block-bg: #e4dfd6;
-$code-block-border: rgba(66, 69, 48, 0.1);
+$code-block-bg: #e0dace;
+$code-block-border: rgba(31, 51, 39, 0.1);
 $code-block-radius: 10px;
 $code-string: #7a5c48;
-$code-keyword: #424530;
+$code-keyword: #1f3327;
 $code-type: #4a5c68;
 $code-number: #4a6f66;
 $code-comment: #8a8580;
 
 body:not(.dark) {
-  // Inline code (Bootstrap default is very saturated)
+  // Inline code
   code:not(pre code) {
-    color: #4d5c44;
-    background-color: rgba(96, 115, 77, 0.12);
+    color: #3d5c47;
+    background-color: rgba(61, 92, 71, 0.1);
     padding: 0.12em 0.35em;
     border-radius: 3px;
     font-size: 0.88em;
@@ -458,11 +491,11 @@ body:not(.dark) {
   pre,
   div.highlight pre {
     background-color: $code-block-bg;
-    border: 1px solid rgba(66, 69, 48, 0.08);
+    border: 1px solid rgba(31, 51, 39, 0.08);
     border-radius: $code-block-radius;
     box-shadow:
       inset 0 1px 0 rgba(255, 255, 255, 0.28),
-      0 1px 1px rgba(66, 69, 48, 0.03);
+      0 1px 1px rgba(31, 51, 39, 0.03);
     padding: 0.8rem 0.95rem;
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
@@ -474,7 +507,7 @@ body:not(.dark) {
   pre.chroma,
   .chroma {
     background-color: $code-block-bg !important;
-    color: #3f403d;
+    color: #2e2a25;
     border-radius: $code-block-radius;
     overflow-x: auto;
     overflow-y: hidden;
@@ -492,9 +525,9 @@ body:not(.dark) {
     top: 0.45rem;
     right: 0.5rem;
     border-radius: 999px;
-    border: 1px solid rgba(66, 69, 48, 0.14);
-    background: rgba(228, 223, 214, 0.88);
-    color: #6a6d5c;
+    border: 1px solid rgba(31, 51, 39, 0.14);
+    background: rgba(224, 218, 206, 0.88);
+    color: #5a5448;
     font-size: 0.62rem;
     letter-spacing: 0.08em;
     line-height: 1;
@@ -591,11 +624,11 @@ body:not(.dark) {
   }
 
   pre.chroma .hl {
-    background-color: rgba(96, 115, 77, 0.15);
+    background-color: rgba(160, 104, 48, 0.12);
   }
 }
 
-// Dark theme: slightly lower contrast than stock Dracula
+// Dark theme
 body.dark {
   pre,
   div.highlight pre {
@@ -685,29 +718,5 @@ body.dark {
   pre.chroma .cm,
   pre.chroma .c1 {
     color: #8d91a5;
-  }
-}
-
-// Experience timeline card balance
-.experience {
-  .card-body {
-    padding: 0.65rem 1rem;
-  }
-
-  .card-body img {
-    width: 40px !important;
-    height: 40px !important;
-  }
-
-  // Override align-content-start so logo sits centered next to text
-  .card-body .d-flex {
-    align-items: center !important;
-    align-content: center !important;
-  }
-
-  .mr-2.mb-2 {
-    margin-right: 0.75rem !important;
-    margin-bottom: 0 !important;
-    align-self: center !important;
   }
 }
