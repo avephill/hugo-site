@@ -119,7 +119,7 @@ social:
 
 # Highlight the author in author lists? (true/false)
 highlight_name: true
+# tagline: "Ecology at the intersection of forests, cities, and the communities navigating a changing climate."
 ---
 
 I'm a global change ecologist at the California Academy of Sciences. My research focuses on anthropogenic vegetation transitions in western North America, spanning both montane forests and urban systems. I draw on natural history, large-scale geospatial modeling, community science, and environmental ethics, and I work to make ecological science legible to the communities who affect and are affected by changing ecosystems.
-{style="text-align: justify;"}

@@ -25,7 +25,12 @@
             {{with site.Params.header.image.width}}width="{{.}}"{{end}}
             {{with site.Params.header.image.height}}height="{{.}}"{{end}}>
           {{- else -}}
-            {{- site.Title -}}
+          <span class="navbar-brand-group">
+            <span class="navbar-brand-title">{{- site.Title -}}</span>
+            {{- with site.Params.header.navbar.subtitle -}}
+            <span class="navbar-brand-subtitle">{{ . }}</span>
+            {{- end -}}
+          </span>
           {{- end -}}
         </a>
       </div>

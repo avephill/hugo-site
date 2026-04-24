@@ -12,16 +12,35 @@
 .about-bio {
   font-size: 0.9rem;
   font-weight: 300;
-  line-height: 1.7;
+  line-height: 1.65;
   color: #2e2a25;
 }
 
+#about .row {
+  align-items: flex-start;
+}
+
 #about .col-lg-8 {
-  padding-right: 3rem;
+  padding-right: 2rem;
+  padding-left: 2.5rem;
+}
+
+.about-bio,
+.about-tagline {
+  max-width: 80%;
 }
 
 #about .article-style {
   text-align: left !important;
+  margin-top: 0 !important;
+}
+
+#about #profile {
+  padding-top: 0;
+}
+
+#about .avatar {
+  mix-blend-mode: multiply;
 }
 
 #about {
@@ -206,6 +225,49 @@ ol {
 .home-section {
   position: relative;
   padding: 60px 0;
+}
+
+// Tighter padding on the hero/about section
+.home-section.wg-about-biography {
+  padding-top: 24px;
+  padding-bottom: 20px;
+}
+
+// Reduce top padding on section immediately after about
+.home-section.wg-about-biography + .home-section {
+  padding-top: 36px;
+}
+
+// Tagline above bio
+.about-tagline {
+  font-family: "EB Garamond", serif;
+  font-style: italic;
+  font-size: 1.15rem;
+  color: #1f3327;
+  line-height: 1.4;
+  margin-bottom: 1rem;
+  font-weight: 400;
+}
+
+// Navbar brand with subtitle
+.navbar-brand-group {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.15;
+}
+
+.navbar-brand-title {
+  font-weight: 700;
+  font-size: 1rem;
+  color: #2e2a25;
+}
+
+.navbar-brand-subtitle {
+  font-size: 0.65rem;
+  font-weight: 400;
+  letter-spacing: 0.04em;
+  color: #6a6158;
+  text-transform: none;
 }
 
 .home-section-odd {

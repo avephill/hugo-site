@@ -5,9 +5,6 @@
 #   Order matches section order in content/_index.md (landing page blocks).
 
 main:
-  - name: Home
-    url: "#about"
-    weight: 10
   - name: Research
     url: "#vision"
     weight: 20
