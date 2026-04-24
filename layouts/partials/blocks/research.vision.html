@@ -1,0 +1,26 @@
+{{/* Research Vision Block */}}
+{{ $page := .wcPage }}
+{{ $block := .wcBlock }}
+{{ $img := $block.content.image | default "/media/community-science-lifecycle.png" }}
+{{ $caption := $block.content.caption }}
+
+<div class="row">
+  <div class="col-12 col-lg-4 mb-4 mb-lg-0">
+    {{ with $block.content.title }}
+    <div class="section-heading d-flex flex-column align-items-center align-items-lg-start mb-3">
+      <h1 class="mb-0">{{ . | markdownify | emojify }}</h1>
+    </div>
+    {{ end }}
+    <div class="text-center text-lg-start">
+      <img src="{{ $img }}" alt="Research vision diagram" class="img-fluid">
+      {{ with $caption }}
+      <p class="small text-muted mt-2"><em>{{ . | markdownify }}</em></p>
+      {{ end }}
+    </div>
+  </div>
+  <div class="col-12 col-lg-8 align-self-start ps-lg-4">
+    <div class="article-style">
+      {{ $block.content.text | markdownify }}
+    </div>
+  </div>
+</div>

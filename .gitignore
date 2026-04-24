@@ -10,3 +10,4 @@ go.sum
 .hugo_build.lock
 .vscode/settings.json
 .DS_Store
+temp
