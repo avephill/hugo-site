@@ -25,25 +25,12 @@
 }
 
 #about {
-  bottom: 0;
-  height: 100vh;
   z-index: 0;
   position: relative;
 }
 
-// For hero image at bottom
 .img-div-bg {
-  bottom: 0px;
-  left: 0px;
-  width: 1600px;
-  height: 100vh;
-  position: fixed;
-  z-index: -1;
-  pointer-events: none;
-
-  @media screen and (min-width: 1600px) {
-    width: 100vw;
-  }
+  display: none;
 }
 
 // Match html and page-body background to body so no strip shows below short pages
