@@ -27,3 +27,4 @@ Current projects include:
 ## Related Apps
 - [Fire Followers](https://calacademy-community-science.shinyapps.io/fire-followers-app/)
 - [EoAL Global Demo](https://calacademy-community-science.shinyapps.io/EoAL-global-demo/)
+- [SF neighborhood biodiversity game](https://calacademy-community-science.shinyapps.io/sf-neighborhood-species-game/)
