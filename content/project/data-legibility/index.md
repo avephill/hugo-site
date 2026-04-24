@@ -21,7 +21,7 @@ Global biodiversity and environmental data are abundant and free, but generating
 My work in this area focuses on building web tools that lower the technical barrier between people and biodeversity data. Some projects use LLMs to enable plain-language queries, while others take a more traditional dashboard approach. What ties them together is a commitment to meeting users where they are and designing around the questions they actually want to ask.
 
 Current projects include:
-1. An LLM-powered web tool that lets urban planners and city agencies ask plain-language questions of biodiversity data across sources like GBIF, OpenStreetMap, and US Census data. This project uses open-weight language models and a custom Model Context Protocol (MCP) server, and is being piloted with the ReImagine SF coalition.
+1. An LLM-powered web tool that lets urban planners and city agencies ask natural-language questions of biodiversity and environmental data across sources like GBIF, OpenStreetMap, and US Census data. This project uses open-weight language models and a custom Model Context Protocol (MCP) server, and is being piloted with the [Reimagining SF coalition](https://reimaginingsf.org/).
 2. A fire followers dashboard built in collaboration with the California Native Plant Society, which turns data from their Fire Followers iNaturalist campaign into an interactive exploratory tool.
 
 ## Related Apps
