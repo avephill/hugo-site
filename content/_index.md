@@ -18,12 +18,7 @@ sections:
       title: Research Overview
       text: |-
         <figure style="text-align: center; margin: 0 auto 1.5rem auto; max-width: 70%;">
-        <a href="/media/community-science-lifecycle.png" data-fancybox="gallery-vision" data-type="image" data-caption="Fig. 1. Community science data can be a foundation for reciprocal relationships between actors addressing and affected by ecosystem change. Dashed teal arrows show each group's direct relationship to the ecosystem. Solid black arrows trace how data, insights, and priorities pass between scientists, communities, and decision-makers." class="d-inline-block text-decoration-none" style="cursor:zoom-in">
-        <picture>
-          <source media="(min-width: 768px)" srcset="/media/community-science-lifecycle.svg" type="image/svg+xml" />
-          <img src="/media/community-science-lifecycle.png" alt="Conceptual life cycle of community science data" class="img-fluid" style="border:1px solid rgba(47,74,58,0.12);border-radius:4px;box-shadow:0 2px 8px rgba(42,38,34,0.06);padding:6px;background-color:#f0ebe0" width="1705" height="1177" decoding="async" />
-        </picture>
-        </a>
+        <img src="/media/community-science-lifecycle.png" alt="Conceptual life cycle of community science data" class="img-fluid" style="border:1px solid rgba(47,74,58,0.12);border-radius:4px;box-shadow:0 2px 8px rgba(42,38,34,0.06);padding:6px;background-color:#f0ebe0" width="1705" height="1181" loading="lazy" decoding="async" />
         <figcaption class="small text-muted mt-1"><em>Fig. 1. Community science data can be a foundation for reciprocal relationships between actors addressing and affected by ecosystem change. Dashed teal arrows show each group's direct relationship to the ecosystem. Solid warm gray arrows trace how data, insights, and priorities pass between scientists, communities, and decision-makers.</em></figcaption>
         </figure>
 

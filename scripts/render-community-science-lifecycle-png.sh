@@ -1,22 +1,25 @@
 #!/usr/bin/env bash
-# Regenerate static PNG from Excalidraw SVG using headless Chrome (preserves embedded fonts).
+# Regenerate static PNG from Excalidraw SVG (headless Chrome) + light ImageMagick post-process.
 #
-# We use a *tall* window and top-align the image (no vertical centering, no overflow clip),
-# then ImageMagick -trim to crop to the art. That fixes bottom clipping and stray top margin
-# from flex centering + rounding when stroke/text extends to the viewBox edge.
+# 1) Tall, top-aligned screenshot so nothing is clipped.
+# 2) Wait for fonts (virtual-time-budget).
+# 3) -trim to the art, then -splice extra bottom margin so light labels / descenders are not
+#    at the last pixel row (avoids the "9. Needs…" looking chopped when scaled in the browser).
+# 4) -extent to 1705px wide, centered, #f0ebe0, so the figure lines up with your layout.
 #
-# Requires: Google Chrome (macOS default path) + ImageMagick (magick).
+# Requires: Google Chrome (default macOS path) + ImageMagick (magick).
 set -euo pipefail
 ROOT="$(cd "$(dirname "$0")/.." && pwd)"
 SVG="$ROOT/static/media/community-science-lifecycle.svg"
 OUT="$ROOT/static/media/community-science-lifecycle.png"
 CHROME="/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
-W=1705
-# Headless capture height must exceed scaled SVG + any label overflow; trim removes the rest
+W_OUT=1705
 CAP_H=5000
+PAD_BOTTOM=80
 HTML="$(mktemp /tmp/render-lifecycle-XXXXXX.html)"
 RAW="$(mktemp /tmp/render-lifecycle-raw-XXXXXX.png)"
-cleanup() { rm -f "$HTML" "$RAW"; }
+TRIM="$(mktemp /tmp/render-lifecycle-trim-XXXXXX.png)"
+cleanup() { rm -f "$HTML" "$RAW" "$TRIM"; }
 trap cleanup EXIT
 
 if [[ ! -f "$CHROME" ]]; then
@@ -36,32 +39,24 @@ cat >"$HTML" <<EOF
 <!DOCTYPE html>
 <html lang="en"><head><meta charset="utf-8" />
 <style>
-  html, body {
-    margin: 0;
-    padding: 0;
-    width: ${W}px;
-    min-height: ${CAP_H}px;
-    background: #f0ebe0;
-  }
-  /* Top-aligned, natural height — do NOT stretch height or center flex (causes clip). */
-  img {
-    display: block;
-    width: ${W}px;
-    height: auto;
-  }
+  html, body { margin: 0; padding: 0; width: ${W_OUT}px; min-height: ${CAP_H}px; background: #f0ebe0; }
+  img { display: block; width: ${W_OUT}px; height: auto; }
 </style></head>
 <body>
-  <img src="file://${SVG}" alt="" />
-</body>
-</html>
+  <img src="file://${SVG}" width="${W_OUT}" alt="" />
+</body></html>
 EOF
 
 "$CHROME" --headless=new --disable-gpu --force-device-scale-factor=1 --hide-scrollbars \
-  --window-size="${W},${CAP_H}" --screenshot="$RAW" "file://${HTML}"
+  --virtual-time-budget=10000 \
+  --window-size="${W_OUT},${CAP_H}" --screenshot="$RAW" "file://${HTML}"
 
-# Tight crop to non-background pixels (same cream as the page; fuzz tolerates antialiasing)
-magick "$RAW" -fuzz 4% -trim +repage "$OUT"
+# Tight crop to art, then add breathing room at the bottom (do not over-fuzz: light grey labels stay).
+magick "$RAW" -fuzz 1% -trim +repage "$TRIM"
+magick "$TRIM" -gravity South -background "#f0ebe0" -splice 0x${PAD_BOTTOM} "$TRIM"
+H2="$(magick identify -format %h "$TRIM")"
+magick "$TRIM" -gravity center -background "#f0ebe0" -extent ${W_OUT}x${H2} "$OUT"
 
-DIM="$({ magick identify -format "%wx%h" "$OUT" 2>/dev/null || identify -format "%wx%h" "$OUT"; })"
-echo "Wrote $OUT (${DIM}px after trim, $(wc -c <"$OUT" | tr -d ' ') bytes)"
-echo "Update content/_index.md <img> to width=\"${DIM%x*}\" height=\"${DIM#*x}\""
+DIM="${W_OUT}x${H2}"
+echo "Wrote $OUT (${DIM}, $(wc -c <"$OUT" | tr -d ' ') bytes)"
+echo "Set content/_index.md <img> width=\"${W_OUT}\" height=\"${H2}\""
