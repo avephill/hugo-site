@@ -1,7 +1,7 @@
 {{/* Research Vision Block */}}
 {{ $page := .wcPage }}
 {{ $block := .wcBlock }}
-{{ $img := $block.content.image | default "/media/community-science-lifecycle.png" }}
+{{ $img := $block.content.image | default "/media/community-science-lifecycle.svg" }}
 {{ $caption := $block.content.caption }}
 
 <div class="row">
@@ -12,7 +12,9 @@
     </div>
     {{ end }}
     <div class="text-center text-lg-start">
-      <img src="{{ $img }}" alt="Research vision diagram" class="img-fluid">
+      <a href="{{ $img }}" data-fancybox="gallery-research-vision" class="d-inline-block text-decoration-none" style="cursor:zoom-in"{{ with $caption }} data-caption="{{ . | plainify | htmlEscape }}"{{ end }}>
+        <img src="{{ $img }}" alt="Research vision diagram" class="img-fluid">
+      </a>
       {{ with $caption }}
       <p class="small text-muted mt-2"><em>{{ . | markdownify }}</em></p>
       {{ end }}

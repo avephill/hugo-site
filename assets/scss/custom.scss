@@ -14,6 +14,8 @@
   font-weight: 300;
   line-height: 1.65;
   color: #2e2a25;
+  // Body copy: avoid browser hyphenation quirks on narrow screens
+  hyphens: none;
 }
 
 #about .row {
@@ -30,8 +32,27 @@
   max-width: 80%;
 }
 
-#about .article-style {
-  text-align: left !important;
+// Stacked layout (below lg): use full column width — 80% max-width + padding looked cramped
+// and exaggerated uneven word spacing on phones.
+@media (max-width: 991.98px) {
+  #about .col-lg-8 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .about-bio,
+  .about-tagline {
+    max-width: 100%;
+  }
+}
+
+// Ragged-right body copy everywhere; full justification is a poor fit for narrow web columns.
+#about .article-style.about-bio,
+#about .article-style.about-bio p {
+  text-align: start !important;
+}
+
+#about .article-style.about-bio {
   margin-top: 0 !important;
 }
 
