@@ -23,8 +23,8 @@ main:
   - name: Contact
     url: "#contact"
     weight: 60
-  - name: Resources
-    url: "/resource"
+  - name: Guides
+    url: "/guide"
     weight: 65
   - name: CV
     url: "/uploads/cv.pdf"

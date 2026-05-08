@@ -7,12 +7,12 @@ type: landing
 sections:
   - block: portfolio
   # - block: collection
-    id: resource
+    id: guide
     content:
-      title: Resources
+      title: Guides
       filters:
         folders:
-          - resource
+          - guide
       # Default filter index (e.g. 0 corresponds to the first `filter_button` instance below).
       default_button_index: 0
       # Filter toolbar (optional).
