@@ -10,15 +10,15 @@
 # Requires: Google Chrome (default macOS path) + ImageMagick (magick).
 set -euo pipefail
 ROOT="$(cd "$(dirname "$0")/.." && pwd)"
-SVG="$ROOT/static/media/community-science-lifecycle.svg"
-OUT="$ROOT/static/media/community-science-lifecycle.png"
+SVG="$ROOT/static/media/community-science-figure.svg"
+OUT="$ROOT/static/media/community-science-figure.png"
 CHROME="/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
 W_OUT=1705
 CAP_H=5000
 PAD_BOTTOM=80
-HTML="$(mktemp /tmp/render-lifecycle-XXXXXX.html)"
-RAW="$(mktemp /tmp/render-lifecycle-raw-XXXXXX.png)"
-TRIM="$(mktemp /tmp/render-lifecycle-trim-XXXXXX.png)"
+HTML="$(mktemp /tmp/render-figure-XXXXXX.html)"
+RAW="$(mktemp /tmp/render-figure-raw-XXXXXX.png)"
+TRIM="$(mktemp /tmp/render-figure-trim-XXXXXX.png)"
 cleanup() { rm -f "$HTML" "$RAW" "$TRIM"; }
 trap cleanup EXIT
 
