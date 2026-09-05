@@ -3,7 +3,7 @@
 // Change icons in about
 .big-icon {
   font-size: 1.1rem;
-  color: #3d5c47;
+  color: #2f5d3f;
   gap: 0.5rem;
   letter-spacing: 0.15rem;
 }
@@ -11,9 +11,9 @@
 // change the text size of the about section
 .about-bio {
   font-size: 0.9rem;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 1.65;
-  color: #2e2a25;
+  color: #1c1c1c;
   // Body copy: avoid browser hyphenation quirks on narrow screens
   hyphens: none;
 }
@@ -76,13 +76,13 @@
 // Match html and page-body background to body so no strip shows below short pages
 html,
 .page-body {
-  background-color: #e8e2d8;
+  background-color: #f4f2ed;
 }
 
 // Publication list page gets the lighter even-section background
 body.pub-list,
 body.pub-list .page-body {
-  background-color: #f0ebe0;
+  background-color: #f4f2ed;
 }
 
 // Hide footer
@@ -96,7 +96,7 @@ body {
   font-weight: 400;
   font-size: 0.9rem;
   line-height: 1.65;
-  color: #2e2a25;
+  color: #1c1c1c;
   letter-spacing: 0.01em;
 }
 
@@ -106,10 +106,10 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "EB Garamond", serif;
-  font-weight: 500;
-  letter-spacing: 0.02em;
-  color: #1f3327;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 600;
+  letter-spacing: normal;
+  color: #1c1c1c;
 }
 
 #about {
@@ -121,12 +121,12 @@ h6 {
 .media.stream-item .article-title,
 .card-simple .article-title {
   font-size: 1rem;
-  color: #1f3327;
+  color: #1c1c1c;
 }
 
 // Cards
 .card {
-  border: 1px solid rgba(47, 74, 58, 0.12);
+  border: 1px solid rgba(0, 0, 0, 0.12);
   box-shadow: none;
   transition: all 0.2s ease;
   margin-bottom: 1rem;
@@ -136,32 +136,23 @@ h6 {
 
 .card:hover {
   box-shadow: 0 10px 30px rgba(42, 38, 34, 0.08);
-  border-color: rgba(61, 92, 71, 0.3);
+  border-color: rgba(47, 93, 63, 0.3);
   transform: translateY(-2px);
 }
 
 .card-title {
-  color: #1f3327;
+  color: #1c1c1c;
 }
 
-// Section headings — sticky + ochre underline accent
+// Section headings — sticky, plain
 .section-heading h1 {
   margin: 0 0 8px 0;
   position: sticky;
   position: -webkit-sticky;
   top: 85px;
-  font-size: 1.5rem;
-  color: #1f3327;
-
-  &::after {
-    content: '';
-    display: block;
-    width: 2.5rem;
-    height: 2px;
-    background: #a06830;
-    margin-top: 0.5rem;
-    border-radius: 1px;
-  }
+  font-size: 1.35rem;
+  font-weight: 600;
+  color: #1c1c1c;
 }
 
 // Narrow section heading column and add right breathing room to content
@@ -180,7 +171,7 @@ h6 {
 // Make navigation more compact
 .navbar {
   padding: 0.5rem 1rem;
-  box-shadow: 0 1px 2px rgba(31, 51, 39, 0.06);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.06);
 }
 
 .navbar-brand {
@@ -213,21 +204,21 @@ h6 {
 }
 
 .btn-primary {
-  color: #3d5c47;
+  color: #2f5d3f;
   border-bottom: 1px solid transparent;
   box-shadow: none;
 
   &:hover,
   &:focus {
     background: none;
-    color: #1f3327;
-    border-bottom: 1px solid #a06830;
+    color: #1c1c1c;
+    border-bottom: 1px solid #2f5d3f;
   }
 
   &.active {
     background: none;
-    color: #1f3327;
-    border-bottom: 1px solid #a06830;
+    color: #1c1c1c;
+    border-bottom: 1px solid #2f5d3f;
   }
 }
 
@@ -242,10 +233,15 @@ ol {
   margin-bottom: 0.8rem;
 }
 
-// Home section base
+// Home section base — one paper tone, hairline rule between sections
 .home-section {
   position: relative;
   padding: 60px 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.home-section.wg-about-biography {
+  border-top: none;
 }
 
 // Tighter padding on the hero/about section
@@ -261,10 +257,8 @@ ol {
 
 // Tagline above bio
 .about-tagline {
-  font-family: "EB Garamond", serif;
-  font-style: italic;
-  font-size: 1.15rem;
-  color: #1f3327;
+  font-size: 1.1rem;
+  color: #1c1c1c;
   line-height: 1.4;
   margin-bottom: 1rem;
   font-weight: 400;
@@ -278,40 +272,40 @@ ol {
 }
 
 .navbar-brand-title {
-  font-weight: 700;
+  font-weight: 600;
   font-size: 1rem;
-  color: #2e2a25;
+  color: #1c1c1c;
 }
 
 .navbar-brand-subtitle {
   font-size: 0.65rem;
   font-weight: 400;
   letter-spacing: 0.04em;
-  color: #6a6158;
+  color: #6b6b6b;
   text-transform: none;
 }
 
 .home-section-odd {
-  background-color: #e8e2d8;
+  background-color: #f4f2ed;
 }
 
 .home-section-even {
-  background-color: #f0ebe0;
+  background-color: #f4f2ed;
 }
 
 // List pages
 body.pub-list {
-  background-color: #f0ebe0;
+  background-color: #f4f2ed;
 }
 
 // Links — ochre with forest hover
 a {
-  color: #a06830;
+  color: #2f5d3f;
   text-decoration: none;
   transition: all 0.15s ease;
 
   &:hover {
-    color: #7a4e22;
+    color: #22452e;
     text-decoration: underline;
     text-decoration-thickness: 1px;
     text-underline-offset: 2px;
@@ -366,7 +360,7 @@ a {
     opacity: 0.7 !important;
     border: none !important;
     background: none !important;
-    color: #a06830 !important;
+    color: #2f5d3f !important;
     font-family: "Source Sans Pro", sans-serif !important;
 
     &:not(:last-child):after {
@@ -431,7 +425,7 @@ a {
   font-weight: 300 !important;
   border: none !important;
   background: none !important;
-  color: #a06830 !important;
+  color: #2f5d3f !important;
   opacity: 0.7;
   font-family: "Source Sans Pro", sans-serif !important;
 
@@ -445,7 +439,7 @@ a {
     transform: none !important;
     text-decoration: underline !important;
     text-underline-offset: 2px !important;
-    color: #7a4e22 !important;
+    color: #22452e !important;
   }
 }
 
@@ -462,10 +456,10 @@ a {
 // Pill filter buttons (FEATURED / ALL toggles)
 .project-toolbar .btn-group .btn.btn-primary {
   background: transparent !important;
-  border: 1px solid rgba(61, 92, 71, 0.25) !important;
+  border: 1px solid rgba(47, 93, 63, 0.25) !important;
   border-radius: 999px !important;
   box-shadow: none !important;
-  color: #4a4540 !important;
+  color: #1c1c1c !important;
   font-family: "Source Sans Pro", sans-serif !important;
   font-size: 0.72rem !important;
   font-weight: 400 !important;
@@ -476,15 +470,15 @@ a {
   margin-right: 0.4rem !important;
 
   &:hover {
-    color: #1f3327 !important;
-    border-color: rgba(61, 92, 71, 0.5) !important;
+    color: #1c1c1c !important;
+    border-color: rgba(47, 93, 63, 0.5) !important;
     background: none !important;
   }
 
   &.active {
-    background: #3d5c47 !important;
-    border-color: #3d5c47 !important;
-    color: #f0ebe0 !important;
+    background: #2f5d3f !important;
+    border-color: #2f5d3f !important;
+    color: #f4f2ed !important;
   }
 }
 
@@ -515,35 +509,31 @@ a {
 // Contact section — inverted dark forest palette
 // ---------------------------------------------------------------------------
 .home-section#contact {
-  background-color: #1f3327 !important;
-  color: #f0ebe0;
+  background-color: #2f5d3f !important;
+  color: #f4f2ed;
 
   h1, h2, h3, p, a {
-    color: #f0ebe0;
+    color: #f4f2ed;
   }
 
   a:hover {
-    color: #c88a4a;
+    color: #f4f2ed;
     text-decoration: underline;
   }
 
   .section-heading h1 {
-    color: #f0ebe0;
-
-    &::after {
-      background: #c88a4a;
-    }
+    color: #f4f2ed;
   }
 }
 
 // ---------------------------------------------------------------------------
 // Code blocks & syntax highlighting
 // ---------------------------------------------------------------------------
-$code-block-bg: #e0dace;
-$code-block-border: rgba(31, 51, 39, 0.1);
+$code-block-bg: #eae8e2;
+$code-block-border: rgba(0, 0, 0, 0.1);
 $code-block-radius: 10px;
 $code-string: #7a5c48;
-$code-keyword: #1f3327;
+$code-keyword: #1c1c1c;
 $code-type: #4a5c68;
 $code-number: #4a6f66;
 $code-comment: #8a8580;
@@ -551,8 +541,8 @@ $code-comment: #8a8580;
 body:not(.dark) {
   // Inline code
   code:not(pre code) {
-    color: #3d5c47;
-    background-color: rgba(61, 92, 71, 0.1);
+    color: #2f5d3f;
+    background-color: rgba(47, 93, 63, 0.1);
     padding: 0.12em 0.35em;
     border-radius: 3px;
     font-size: 0.88em;
@@ -561,11 +551,11 @@ body:not(.dark) {
   pre,
   div.highlight pre {
     background-color: $code-block-bg;
-    border: 1px solid rgba(31, 51, 39, 0.08);
+    border: 1px solid rgba(0, 0, 0, 0.08);
     border-radius: $code-block-radius;
     box-shadow:
       inset 0 1px 0 rgba(255, 255, 255, 0.28),
-      0 1px 1px rgba(31, 51, 39, 0.03);
+      0 1px 1px rgba(0, 0, 0, 0.03);
     padding: 0.8rem 0.95rem;
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
@@ -577,7 +567,7 @@ body:not(.dark) {
   pre.chroma,
   .chroma {
     background-color: $code-block-bg !important;
-    color: #2e2a25;
+    color: #1c1c1c;
     border-radius: $code-block-radius;
     overflow-x: auto;
     overflow-y: hidden;
@@ -595,8 +585,8 @@ body:not(.dark) {
     top: 0.45rem;
     right: 0.5rem;
     border-radius: 999px;
-    border: 1px solid rgba(31, 51, 39, 0.14);
-    background: rgba(224, 218, 206, 0.88);
+    border: 1px solid rgba(0, 0, 0, 0.14);
+    background: rgba(234, 232, 226, 0.92);
     color: #5a5448;
     font-size: 0.62rem;
     letter-spacing: 0.08em;
@@ -694,7 +684,7 @@ body:not(.dark) {
   }
 
   pre.chroma .hl {
-    background-color: rgba(160, 104, 48, 0.12);
+    background-color: rgba(47, 93, 63, 0.12);
   }
 }
 
