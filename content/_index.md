@@ -18,7 +18,7 @@ sections:
       title: Research Overview
       text: |-
         <figure style="text-align: center; margin: 0 auto 1.5rem auto; max-width: 70%;">
-        <img src="/media/community-science-figure.svg" alt="Conceptual life cycle of community science data" class="img-fluid" style="border:1px solid rgba(47,74,58,0.12);border-radius:4px;box-shadow:0 2px 8px rgba(42,38,34,0.06);padding:6px;background-color:#f0ebe0" width="1705" height="1181" loading="lazy" decoding="async" />
+        <img src="/media/community-science-figure.svg" alt="Conceptual life cycle of community science data" class="img-fluid" width="1705" height="1181" loading="lazy" decoding="async" />
         <figcaption class="small text-muted mt-1"><em>Community science data can be a foundation for reciprocal relationships between actors addressing and affected by ecosystem change. Dashed arrows show each group's direct relationship to the changing ecosystem. Solid arrows trace examples of the relationships community science data can build between scientists, communities, and decision-makers.</em></figcaption>
         </figure>
 

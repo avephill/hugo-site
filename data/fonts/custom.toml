@@ -56,16 +56,16 @@
 # heading_font = "Merriweather"
 # body_font = "Source Sans Pro"
 # nav_font = "Source Sans Pro"
-# mono_font = "Source Code Pro"
+# mono_font = "Menlo"
 
 # Font style metadata
-name = "Misty Forest Typography"
+name = "Single-family typography"
 
 # Optional Google font URL (empty: fonts are self-hosted in static/fonts + assets/scss/_fonts-local.scss)
 google_fonts = ""
 
 # Font families
-heading_font = "EB Garamond"
+heading_font = "Source Sans Pro"
 body_font = "Source Sans Pro"
 nav_font = "Source Sans Pro"
-mono_font = "Source Code Pro"
+mono_font = "Menlo"

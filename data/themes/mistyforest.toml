@@ -1,22 +1,22 @@
 # Theme metadata
-name = "Misty Forest Minimalist"
+name = "Paper and green"
 
 [light]
   # Primary — deeper forest green for buttons/active states
-  primary = "#3d5c47"
+  primary = "#2f5d3f"
 
   # Menu
-  menu_primary = "#e8e2d8"     # warm linen navbar
-  menu_text = "#4a4540"        # warm charcoal
-  menu_text_active = "#1f3327" # deep forest for active
-  menu_title = "#4a4540"
+  menu_primary = "#f4f2ed"     # warm linen navbar
+  menu_text = "#1c1c1c"        # warm charcoal
+  menu_text_active = "#1c1c1c" # deep forest for active
+  menu_title = "#1c1c1c"
 
   # Links — ochre/terracotta
-  link = "#a06830"
-  link_hover = "#7a4e22"
+  link = "#2f5d3f"
+  link_hover = "#22452e"
   link_decoration = "none"
 
   # Home sections — warmer paper tones
-  home_section_odd = "#e8e2d8"   # warm taupe-paper
-  home_section_even = "#f0ebe0"  # lighter warm off-white
-  background = "#e8e2d8"
+  home_section_odd = "#f4f2ed"   # warm taupe-paper
+  home_section_even = "#f4f2ed"  # lighter warm off-white
+  background = "#f4f2ed"
