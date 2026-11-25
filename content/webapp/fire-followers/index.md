@@ -13,7 +13,7 @@ show_related: false
 custom_order: 1
 
 # External URL for the webapp
-external_link: "https://calacademy-community-science.shinyapps.io/fire-followers-app/"
+external_link: "https://fire-followers.cnps.org/"
 
 image:
   caption: "Fire-affected forest landscape"
@@ -25,7 +25,7 @@ links:
   - icon: external-link-alt
     icon_pack: fas
     name: Launch App
-    url: https://calacademy-community-science.shinyapps.io/fire-followers-app/
+    url: https://fire-followers.cnps.org/
   - icon: github
     icon_pack: fab
     name: View Code
