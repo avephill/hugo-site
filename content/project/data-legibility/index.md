@@ -25,6 +25,6 @@ Current projects include:
 2. A fire followers dashboard built in collaboration with the California Native Plant Society, which turns data from their Fire Followers iNaturalist campaign into an interactive exploratory tool.
 
 ## Related Apps
-- [Fire Followers](https://calacademy-community-science.shinyapps.io/fire-followers-app/)
+- [Fire Followers](https://fire-followers.cnps.org/)
 - [EoAL Global Demo](https://calacademy-community-science.shinyapps.io/EoAL-global-demo/)
 - [SF neighborhood biodiversity game](https://calacademy-community-science.shinyapps.io/sf-neighborhood-species-game/)

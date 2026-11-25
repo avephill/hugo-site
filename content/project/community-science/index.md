@@ -23,7 +23,7 @@ I lead a campaign to identify and monitor indicator species in zombie forests. W
 
 ## California Fire Followers
 
-Statewide iNaturalist campaign documenting post-fire biodiversity after the 2020 fire season, led by the California Native Plant Society. I built a [data explorer tool](https://calacademy-community-science.shinyapps.io/fire-followers-app/) for them. Here's the [iNaturalist project page](https://www.inaturalist.org/projects/california-fire-followers-2020-data-management)
+Statewide iNaturalist campaign documenting post-fire biodiversity after the 2020 fire season, led by the California Native Plant Society. I built a [data explorer tool](https://fire-followers.cnps.org/) for them. Here's the [iNaturalist project page](https://www.inaturalist.org/projects/california-fire-followers-2020-data-management)
 
 
 ## City Nature Challenge
